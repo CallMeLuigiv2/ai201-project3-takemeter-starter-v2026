@@ -51,63 +51,75 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Label balance
 
-<!-- Your criterion. It must name a number. -->
+`evidence` makes up at least **18%** of `labels.csv`, which puts at least
+**8** `evidence` posts in the test split on every seed. No label is more than
+**45%** of the file.
 
-
-
-**Why this target:**
-
-
-
----
-
-## 2.
-
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** The first 255 posts had only 28 `evidence` (11%), and
+that put just 4 in the test split. With 4 posts, one missed post moves
+`evidence` recall by 25 points, and the notebook warns when a label has fewer
+than 8 test posts. At this dataset size, 18% is about where the split reaches
+8. `opinion` is the biggest label at 47%. Holding every label to 45% means a
+model that answers `opinion` every time gets well under half the posts right.
 
 ---
 
-## 3.
+## 2. `evidence` F1
 
-<!-- Your criterion. -->
+`evidence` has an F1 of at least **0.50** on the test split, on all three
+seeds.
 
-
-
-**Why this target:**
-
-
-
----
-
-## 4.
-
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** `evidence` is the thinnest label. Even after the top-up it
+has fewer than 40 training posts, so its bar sits below the other two. With
+8 test posts, 0.50 means finding about half of them without as many false
+calls as hits. Guessing in proportion to the label shares scores about 0.2.
+These posts are built around a link, a quote or a number that's visible in
+the text, so beating chance by a wide margin is a fair bet.
 
 ---
 
-## 5.
+## 3. Macro F1
 
-<!-- Your criterion. -->
+Macro F1 is at least **0.60** on the test split, on all three seeds.
 
+**Why this target:** Macro F1 weights `evidence` the same as the two big
+labels, so a model can't pass by ignoring it the way it could with accuracy.
+Random guessing scores about 0.33, and answering `opinion` every time scores
+about 0.20. Criteria 2 and 4 together only guarantee
+(0.50 + 0.60 + 0.60) ÷ 3 = 0.57. So 0.60 asks for more: if `evidence` lands
+at 0.50, `opinion` and `reaction` have to average at least 0.65.
 
+---
 
-**Why this target:**
+## 4. `opinion` and `reaction` F1
 
+`opinion` and `reaction` each have an F1 of at least **0.60** on the test
+split, on all three seeds.
 
+**Why this target:** These two labels are about four-fifths of the data, and
+the line between them is the hardest one in the taxonomy. In the cold test,
+10 of the 12 disagreements were `opinion` against `reaction`. So the labels
+near that line are the least certain in the set, and a bar of 0.80 or more
+would ask for more consistency than the labels have. Random guessing gets
+about 0.35–0.42 on each. Answering `opinion` every time already gets about
+0.60 on `opinion` alone, which is why `reaction` has to clear the same bar.
+
+---
+
+## 5. Confidence
+
+On every seed, accuracy on the model's most-confident third of the test split
+is at least **0.20** higher than on its least-confident third. That's about 3
+more posts right out of 14.
+
+**Why this target:** Thin `evidence` and a fuzzy `opinion`/`reaction` line
+mean a good share of the test posts are borderline. If the model's confidence
+means anything, those posts should land in its unsure third, and its sure
+third should be clearly better. One post is worth about 0.07 here, so a gap
+of 1 or 2 posts could be chance. 3 is the smallest gap that says the
+confidence is real.
 
 ---
 

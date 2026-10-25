@@ -39,8 +39,17 @@
 
 ## What This Does
 
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
+TakeMeter sorts Hacker News comments from AI and LLM threads by what each
+comment does:
+
+- `evidence` backs up a point with a link, a quote, a number or a test.
+- `opinion` tells you how the writer feels about something.
+- `reaction` states, explains, predicts or asks without doing either.
+
+It's `distilbert-base-uncased`, fine-tuned on 284 comments I labelled from 12
+of the busiest AI threads of August–October 2026. The aim is to pick the
+arguments out of a thread full of takes. In a random sample of these threads,
+fewer than one comment in ten backs up what it says.
 
 
 
@@ -243,19 +252,54 @@ about 11 points.
      workflow and disclosing it costs you nothing. Not disclosing it is the
      problem. -->
 
-**Moment 1**
+**Moment 1: labelling the posts**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked Claude to label the posts and give me a page
+  with a checkbox for each label, so I could agree or disagree with each one.
+- *What came back:* a three-label draft (`evidence`, `opinion`, `reaction`;
+  Claude dropped a `question` label because only 11 of 220 posts were real
+  questions), pre-labels for the posts, and a review page. The page hid
+  Claude's labels on 20 random posts so I could label those cold.
+- *What I changed:* My cold labels matched Claude's on only 8 of 20 (40%),
+  and 10 of the 12 misses were `opinion` against `reaction`. Claude had drawn
+  the line at "does it make a claim about the world?" I replaced that with my
+  own rule: `opinion` is how the writer feels about something, and `reaction`
+  is stating or detailing something. I also tightened `evidence` to posts
+  built as "this backs up this". Claude relabelled its pre-labels under my
+  rule, and 108 of 220 changed.
 
-**Moment 2**
+**Moment 2: the acceptance criteria**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* what the five criteria could be about, with the reasons
+  for each.
+- *What came back:* seven measurable areas, each with a question to answer.
+  These were overall accuracy, `evidence` F1, `opinion` and `reaction` F1,
+  macro F1, label balance, consistency and confidence. Each came with what it
+  would mean for my 39-post test split.
+- *What I changed:* I picked five of them (label balance, `evidence` F1,
+  macro F1, `opinion` and `reaction` F1, confidence) because of how my data
+  is spread: `evidence` was 11% of the labels, and `opinion` against
+  `reaction` was my hardest boundary. **I asked Claude to set the numbers**,
+  and it did. It set each target above what guessing or always answering
+  `opinion` would score, and below what labels this uncertain could support.
+  Criterion 1 then meant collecting more `evidence` posts before training.
 
 **Pre-labelling disclosure:**
+
+- Claude drafted the first label definitions and pre-labelled every post
+  except the 20 cold ones.
+- I labelled 20 random posts cold, without seeing Claude's labels
+  (`cold` in the note column).
+- I went through 15 of Claude's labels on the review page. I agreed with 12
+  and changed 3 (`checked` / `corrected from …`). Four of the 12 were later
+  relabelled under my revised rule (`relabelled under the revised rule`).
+- The remaining 249 labels are Claude's, applied under my rule
+  (`pre-labelled by Claude`). They include the 64 posts collected to top up
+  `evidence`. For the last 29 of those, Claude screened 90 comments and kept
+  the ones it labelled `evidence`.
+- Claude also wrote the scripts that downloaded and sampled the threads and
+  built `labels.csv`. It ran the notebook and drafted this README and
+  `NOTES.md` from my decisions.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

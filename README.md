@@ -203,15 +203,32 @@ the posts. The `note` column says where each label came from:
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`, fine-tuned on my laptop's CPU
+(Intel i3-1115G4, no GPU, torch 2.14.1+cpu). Training took 7 min 44 s for 39
+steps.
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs, learning rate 2e-5, batch size 16, max length 128
+tokens, seed 42.
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** Nothing. The only edits to
+the notebook were `LABELS` (my three labels) and NAME/EMAIL. One thing to
+watch is the 128-token limit. 31 of the 284 posts are longer and get cut off,
+and 14 of those are `evidence`, a quarter of that label. Evidence posts often
+put their link or source at the end ("[1] https://…"), so the part that makes
+them `evidence` can be the part that's cut.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:** 198 train / 43 validation / 43 test, stratified. Seeds 42, 7
+and 2024 all give the same per-label counts:
+
+| Label | Train | Val | Test |
+|---|---|---|---|
+| `opinion` | 83 | 18 | 18 |
+| `reaction` | 76 | 16 | 16 |
+| `evidence` | 39 | 9 | 9 |
+
+`evidence` has 9 test posts, just over the 8 that criterion 1 asks for. It's
+still the thinnest label, and each of its test posts moves its recall by
+about 11 points.
 
 
 

@@ -1,0 +1,827 @@
+text,label,note
+The companies have aligned incentives so I don't think this is a terrible acquisition for customers.,opinion,"pre-labelled by Claude, checked"
+I wonder if OpenRouter being acquired was a catalyst for this deal.,reaction,"pre-labelled by Claude, checked"
+"HuggingFace offers abliterated/uncensored models, which would seem to run contrary to the ""AI is too powerful for regular people"" narrative that the big players are pushing.
+
+My primary concern is that Nvidia will bow to the pressure and restrict abliterated/uncensored models on HF.",opinion,"pre-labelled by Claude, checked"
+"I dunno. You can argue over whether they're overpaying, but it's not like Huggingface is Clinkle. They hit $150 million in ARR this year, they have tons of runway, and according to reports, have just started to even burn the money they raised a few years ago.
+
+I get that it's fun to be glib about the stupidity of tech elites and investors in general, but Huggingface have been pretty open about their financials and are, in my opinion as a practitioner in the field, one of the most responsible orgs in our space. They've been a pillar of open source ML for years now and have made a very positive impact on our ecosystem.
+
+Nvidia is getting a real business generating revenue, and the center of the universe for open models. Both seem like pretty valuable attributes, from Nvidia's perspective.",reaction,"pre-labelled by Claude, corrected from evidence"
+Yeah I'm afraid they will only keep cuda support for their software. Good thing it's all Open source,opinion,"pre-labelled by Claude, checked"
+"> they were going to do open source it anyway.
+
+uh huh.
+
+> Was NVCC or CUDA ever open source since the lifetime of its development?
+
+you ever ask Nvidia why? i did.",opinion,pre-labelled by Claude
+"""The proprietary shovel seller has some excellent tutorials on how to dig gold. Nobody else has such good step by step guides. Therefore them buying a shovel-agnostic tutorials and techniques method (that has a lot of info on using other shovels effectively) is justified.""",opinion,pre-labelled by Claude
+Nvidia overpaid for Hugging Face.,opinion,pre-labelled by Claude
+"This isn't a good thing for open source.
+
+Nvidia don't share CUDA, don't open source their drivers, don't support capable but older hardware (forget Pascal etc), and generally charge a premium over competitors for hardware.
+
+This acquisition will likely solidify this general stance, reduce free compute allowance for a subscription, cap downloads, push advertising, generally favour models that are Nvidia prescribed or have been sponsored, and potentially ban models and datasets that are deemed risky legally (abliterated etc).
+
+I see no other reason why Nvidia would want this kind of vertical.",opinion,pre-labelled by Claude
+(It was a retrospective question.),reaction,pre-labelled by Claude
+"Better to site the primary source, its like googling something and then siting google as your source.",opinion,pre-labelled by Claude
+Many open weight models do actually have open training data and training algorithms -- I think especially some from Nvidia!,reaction,pre-labelled by Claude
+"Started from an ugly repository and ended up making history in less than 10 years, from `pytorch-pretrained-bert` to huggingface, well deserved, its fascinating to follow.",opinion,pre-labelled by Claude
+"> Hugging Face has essentially become github for model repositories and I think nvidia wanted to snag that before microsoft does.
+
+Given that most of the weights are from Chinese labs and teams, I'm surprised China's own ModelScope hasn't leapfrogged HuggingFace.",opinion,pre-labelled by Claude
+"""Horizontal integration is the process of a company increasing production of goods or services at the same level of the value chain, in the same industry. A company may do this via internal expansion or through mergers and acquisition"" [emphasis mine]
+
+https://en.wikipedia.org/wiki/Horizontal_integration
+
+Anything else you care to throw at the wall to see if it sticks, just go ahead and assume I disagree with you given how our interaction has gone so far.",evidence,cold
+How dare you malign Jensen's jacket so.,reaction,pre-labelled by Claude
+They are buying the user base.,reaction,"pre-labelled by Claude, checked, relabelled under the revised rule"
+$13B for what people called a file host is Nvidia buying the place everyone already pulls weights. they didn't need a new lab.,reaction,"pre-labelled by Claude, checked, relabelled under the revised rule"
+"Did we get thought traces back? If no, it's useless.",opinion,"pre-labelled by Claude, checked"
+"""Claude Mythos 5.1 is identical to Fable 5.1, but it offers more permissive safeguards for vetted individuals and organizations""
+
+Then why does it have separate datapoints for Terminal Bench, and score higher? Something doesn't add up here??",evidence,"pre-labelled by Claude, checked"
+"> This required us to add a watermark—a numerical way of determining the likelihood that Claude was involved in writing a piece of text—to the outputs of models released after August 2, 2026. As we recently explained, this watermark is invisible to anyone who does not have the detection API. It has no practical impact on the quality or content of Claude’s outputs and contains no information about the user, their organization, or their conversations with Claude.
+
+How does this work if it doesn’t change the output?",reaction,cold
+"Yeah, it's like day and night. It used to be really unpleasant to interact with early codex versions. Even 5.3 wasn't great. Now, I go to Sol if I need to discuss anything. I don't even bother with Opus because I know that it's going to give me a headache.",opinion,"pre-labelled by Claude, corrected from reaction"
+"Felix, just poking at this, and it is MUCH more pleasant to talk to, thanks to your teammates for the work.",opinion,"pre-labelled by Claude, corrected from reaction"
+We will have more bugs. Even the best models with the best software engineers will produce bugs. There are two reasons : first the pressure to produce more and second LLMs will always produce slop,opinion,"pre-labelled by Claude, checked"
+"Just don't expect to do any work on hardware/firmware you own with fable, I can hardly even type in the word ""firmware"" without it downgrading to Opus 4.8, which is totally unsatisfying. This even happens with Opus 5. Definitely making multiple classes of users moving forward and most of us are obviously going to be part of the permanent underclass.",opinion,"pre-labelled by Claude, checked"
+"Yes and the last bit is always mysterious and inscrutable. I have to think way too hard to figure out what the actual problem is. I’ve noticed it does a lot of explaining the mechanics of the problem it found, but almost never explains why it’s important until I ask.
+
+And the worst part is that this little problem will keep sneaking into the context of future sessions, unless you spend the time to fix it. Even if it isn’t important, I’ll sometimes have Claude fix it so it will shut the F up about it going forward.",opinion,"pre-labelled by Claude, checked, relabelled under the revised rule"
+"> fail closed
+
+I understand fail closed to mean, be secure when in failure.  And fail open to be continue to operate during a failure.  A door that fails closed would not let anyone in; one that fails open lets everyone in.
+
+But I can see how these are not the mutually exclusive definition the labels imply, especially if you apply the concept to entities that aren't doors or otherwise have explicit open/closed states.  It's probably best to just be specific in those cases.
+
+Similarly, open loop vs closed loop seems to trip people up enough that I no longer use it.  But the confusion is understandable since ""closed loop"" being ""has a feedback loop"" sounds backwards.  Which, is the same way it's being used in your fuse example; a ""closed"" fuse closes the circuit making it live.  But it's still backwards from the colloquial usage, even if it's correct in that context.",reaction,"pre-labelled by Claude, checked, relabelled under the revised rule"
+"In my experience, people who make fun of AI's ability to eliminate white-collar work are exactly the same people who are white-knuckling it, hoping they can make another $300k next year to buy that Rivian.
+
+People who don't need a salary look at the situation more objectively and, in general, can see that a lot of white-collar work is in peril.",opinion,pre-labelled by Claude
+"Not so sure since Anthropic has 4 model families while OpenAI has 3 for GPT-5.6.
+
+Claude Fable/Mythos vs GPT-5.6 Sol
+
+Claude Opus vs GPT-5.6 Terra
+
+Claude Sonnet vs GPT-5.6 Luna
+
+Claude Haiku vs ?",evidence,pre-labelled by Claude
+Sounds like a very narrow view on what constitutes science.  There are many fields of science where there is existing data against which new ideas can be tested without additional 'real-world' measurements.  Newton's theory of gravitation relied entirely on pre-existing astronomical data for which there was no existing unifying theory. He made progress by putting forward a theory which explained that data.  Now you can argue that it's not really science unless you include the original data collection and subsequent real-world measurement validation steps. But I'd be comfortable saying that Newton was indeed a scientists and  did make progress in science despite only doing what some might say is the 'middle' part of the process.  There are plenty of modern analogs where work like this sits out there waiting to be done using existing data.,opinion,pre-labelled by Claude
+In AI years that's probably next month or two.,reaction,pre-labelled by Claude
+"Obviously Ed is a special case, but let's be honest, pretty much anybody telling you they can predict the future is selling you BS. And that includes all the people confidently predicting he was wrong. The actual situation is, there are genuine unknowns driving things with significant influence, and nobody actually knows what is going to happen. At best, people can talk about risks and likelihoods of outcomes.",opinion,pre-labelled by Claude
+"Dario Amodei and Eric Schmidt seem fairly well-calibrated, although a bit early. Elon Musk is constantly way, way overoptimistic (perhaps to the point of willful fraud). Zitron is hopelessly and ridiculously incompetent (and there are allegations he is willfully lying, too, but who knows).",opinion,pre-labelled by Claude
+"You may be living in a bubble.  There are tons of developers still coding by hand, and many industries that don't trust machine generated code in general.",reaction,pre-labelled by Claude
+"You're on Hacker News - I suggest you have technical curiosity and actually understand this very unusual and innovative algorithm, before you claim things about it that aren't true.",opinion,pre-labelled by Claude
+">I think separating AI as a tool and it's capabilities and AI as product that needs to make a profit is helpful, however most people are really hedging in one camp or the other in their takes.
+
+There are a myriad of people out there who have brought up genuine issues that AI presents, or preexisting issues that AI is exacerbating.
+
+This series of articles is perhaps the best long form critique of AI as both a technology and an industry I've encountered [1].
+
+[1] https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here",opinion,pre-labelled by Claude
+"Why is Zitron’s repute evaluated entirely on the basis of failed predictions? Predictions are incredibly hard. AI enthusiasts and thought leaders have made  so many demonstrably incorrect predictions it’s hard to keep track. Based on this metric, Altman and Amodei should never be taken seriously again.",opinion,pre-labelled by Claude
+"zitron is a jester. He knows his audience and plays it well. It is incredibly tiring to listen to his lies, but so are the AI boosters. I think it is net zero",opinion,cold
+"You could try checking the news.
+
+> In a remarkable interview with Y Combinator in November 2024, Sam Altman, CEO of OpenAI, shared a vision that could redefine the technological landscape as we know it. Altman confidently revealed that OpenAI has a clear roadmap for achieving AGI by 2025.
+
+https://www.tomsguide.com/ai/chatgpt/sam-altman-claims-agi-is-coming-in-2025-and-machines-will-be-able-to-think-like-humans-when-it-happens
+
+Now Altman is claiming it'll be this year for sure: https://www.msn.com/en-in/news/other/sam-altman-makes-bold-agi-claim-says-openai-could-achieve-it-this-year/ar-AA2b0M1N",evidence,pre-labelled by Claude
+"Interestingly, it's practically a dead ringer for GLM 5.3's version (running https://huggingface.co/incoai/GLM-5.3-NVFP4 locally): https://i.imgur.com/QnzlSFp.png",reaction,cold
+"As said elsewhere:
+
+Chain of thought does not exist in the output of Claude, they disabled true thinking due to distillation risk. What you see when thinking summaries are enabled are just that, summaries of thinking into Claude-isms, therefore you cannot make any inferences on what the model is doing unless you literally work at Anthropic and can see the true thinking traces.",reaction,pre-labelled by Claude
+Do his predictions about the datacenters being a risky and unprofitable business suffer the same fate as the others?,reaction,pre-labelled by Claude
+"So no one is in control at the wheel? Just press a button?
+
+I can see in the future in school or on the job. Oral testing is coming back. You’re gonna have to explain everything you are doing at some point to your teacher/boss or to a panel of your peers in detail.",reaction,pre-labelled by Claude
+"Interesting that the ""frontier"" keeps moving forward from the guys who want a pause.",reaction,pre-labelled by Claude
+"This is the most bizarre and trivial line of argument I’ve ever seen on HN.
+
+Swapping those words changes nothing about that sentence.",opinion,pre-labelled by Claude
+"IMO that would be a mistake because Simplified Technical English cannot properly represent business domains specifically when talking about using specific concepts from those domains. It can explain those concepts but I think it will fail short or naming them.
+
+So I think making that default as it is will create bugs. I ran an experiment here https://allaboutcoding.ghinda.com/explain-to-me-in-simple-technical-english (of course it is fit to my usage) see section ""What about understanding and facts"" and ASD-STE100 fails, in my experiment, to return facts as I have defined them in those cases compared with no instruction or just saying ""use Simple Technical English"".",evidence,pre-labelled by Claude
+You can define any word to be whatever you want and thus have linguistically correct predictions that are functionally useless.,opinion,pre-labelled by Claude
+"What are you actually trying to get at? Had you even bothered to watch the 2nd (short) yet?
+
+My point was that he’s willing to acknowledge that he was wrong, that is what the clip shows. Also can you read minds now?
+
+‘He's also just saying what he thinks people (the general population) want to hear’",opinion,pre-labelled by Claude
+"> That's an unfair characterization of tech journalists in general.
+
+Not at all. Journalists in general have a very poor reputation and Gaming/Tech journalists have an even poorer reputation. I have regularly found various stories to be incorrect and/or so poorly reported that I could spend all of 5 minutes doing a web search and find the original post / video or article and at best it is often misleading.",opinion,pre-labelled by Claude
+"Software engineering has been a thing for decades and you'd still be hard pressed to find two engineers agreeing on what constitutes ""good code"". It's not a serious discipline, we're closer to bootleggers brewing liquor in a bathtub than we are from anything remotely close to engineers.",opinion,pre-labelled by Claude
+"After looking at some of his recent interviews, he's acknowledged his previous predictions that 1. He was naive enough to think the investment won't keep coming despite lack of profitability and 2. He acknowledges that AI in it's current form is a billion dollar industry, not a trillion dollar one, but also not zero.
+
+Definitely less extreme than he used to be.",reaction,pre-labelled by Claude
+"Doesn't it say something about our society that (a) it's known (at least among smart people, however 'smart' is defined) that AI is going to take away jobs, and (b) the way its treated is that people gather to online discussion forums to worship someone saying the thing that will replace their jobs isn't going to do it (but in actuality, eventually will)? In other words, who's actually doing anything to help the people out who will lose their jobs??",opinion,pre-labelled by Claude
+"> No, the cornerstones of his thesis are: [...] The amount of money being dumped into this industry will never pay off.
+
+That has only been a cornerstone of his thesis for the last 10 months or so, once Claude Code and Codex began making gobs of revenue. Before that the cornerstone of his thesis was ""nobody will ever pay for AI"" and then he silently pivoted, without acknowledging any error, once it was clear that was not true.
+
+This is what bugs people about Zitron and why people aren't listening to him. He's has repeatedly been proven wrong, and every time it happens he just silently moves the goalposts and never admits any mistakes. It's fine-- actually, correct-- to write someone off once it's clear that every time they get disproven they'll just move to a new thesis instead of reflecting on what went wrong and what assumptions might be fundamentally incorrect about their thinking.",opinion,pre-labelled by Claude
+"That may be true - but I hadn't used Claude Code and I was still in  the ""its impossible to vibecode successfully"" mindset",opinion,cold
+"I was going to compare to Uber, but realized this would be unfair to Uber.
+
+Also, couldn’t quite decide whether this is malice or incompetence.",opinion,pre-labelled by Claude
+GPT-6 is so good that all pelicans born after today will look exactly the one generated by simonw,reaction,pre-labelled by Claude
+Interesting both this and Sol got approximately a 37% boost with the custom harness.,reaction,pre-labelled by Claude
+"Yes. I had Codex rewrite and fix all of this in one shot earlier today (using Typescript). Unfortunately, I can not show you the code, because I do not know how this ""git"" program works but the AI keeps talking about it.",opinion,pre-labelled by Claude
+Does AGI imply a model will demonstrate morality? Will it produce white-lies when it’s beneficial to it and reject flat out lying when it knows it will get caught or harm others? Will it resolutely stick to a position despite it being a losing one?,reaction,pre-labelled by Claude
+"And that's the rub, isn't it?
+
+If it can replace a worker but does too much work to be checked routinely by a human, and bears no real responsibility for its actions, well... it's really just a way to jack up the value of the settlement the company using it gets to pay out when it does something that causes a lawsuit.
+
+If OpenAI had just simply stuck to making ""good enough"" models that were open sourced (like they promised they would be when starting out) and could be used to augment a human doing a task - a human that could be given actual consequences for messing up - they wouldn't have burned all of this money trying to reach this nebulous definition of AGI. Hell, ""good enough"" is what many open-source models are, and that's what terrifies Altman.",opinion,pre-labelled by Claude
+"Watch a chess bot championship here: 
+https://youtu.be/7g-jN3DTkWQ?is=HV3cdcICIRMbswQ3
+
+Then realize LLMs have zero of what anyone would consider intelligence.",reaction,cold
+A personal trainer is partly a social experience.,reaction,pre-labelled by Claude
+"Between all the posts fabricating scenarios to justify the AA score and the others trying to undermine AA, I'm getting strong astroturf vibes.
+
+Either that, or the average poster on HN isn't nearly as critical as I had thought.",opinion,pre-labelled by Claude
+"I am really confused on how it can saturate ARC-AGI but still perform poorly on aggregated benchmarks:
+
+https://artificialanalysis.ai/models
+
+Perhaps if it was allowed this custom harness for all benchmarks it would similarily saturate?",reaction,pre-labelled by Claude
+"I don't get it, human employees frequently need to ask for directions too?
+
+They often act on their own, too, and get things wrong a lot. The reason it works is because of all the systems of laws and institutions we have built around humans, not so much because human minds are special.",reaction,pre-labelled by Claude
+"I work for a larger german retail chain and agentic shopping is already on the ""near future vision"". 
+No one thinks this will be used but somehow shareholders love it.",reaction,pre-labelled by Claude
+"I think we're getting to the point where it is difficult to identify the goal post of AGI.
+
+Is it rapid skill acquisition? -> ARC benchmarks are saturated
+Is it breadth of knowledge? -> See many ... many benchmarks
+Is it ability to do hard tasks? -> see terminal-bench and released outputs.
+
+We are at the point where the starting point for most tasks should be ""send your agent to work on it.""
+
+So where do we draw the line in a way that doesn't move every 6 months?",evidence,pre-labelled by Claude
+"Let me guess: the last crackdown on Hugging Face yielded better-than-expected results. They obtained the answers to the test benchmarks, and for some reason, an agent added those answers to the training set.",opinion,pre-labelled by Claude
+"Yes, they run competitions once a year amongst open weight models",reaction,pre-labelled by Claude
+when is it available on plus?,reaction,pre-labelled by Claude
+"Interesting. I actually prefer when agents don't commit on my behalf unless I explicitly say so, I even had to add a custom instruction for Claude to stop doing it (Codex never does it). Even if I don't read all the code line-by-line, I at least want to see the changes at glance and commit myself. Git Fork[0] is a great tool for that, by the way.
+
+In general, I don't like when I have to prompt models to NOT do something. It's probably difficult for the AI companies to get this right, they should understand ambiguity but still not over-do simple instructions.
+
+[0] https://git-fork.com/",opinion,pre-labelled by Claude
+"Democratized in the Classical Greece sense, where you had to be male, not a slave, and own land to get a vote.",opinion,pre-labelled by Claude
+"From what pros are saying after matches, especially in classical chess, it's almost always preparation and metagaming the opponent vs finding good moves.
+
+It's a lot of mind games involved, going for specific openings, repeating same moves as last match, doing a poor by surprising, move etc.
+
+Many GMs said that to win a match you have to play non-ideal moves many times, otherwise it will likely end in a draw.",reaction,pre-labelled by Claude
+Yes after reading the Hugging Face article forked a project for agent message boards and started having them collaborate on things. I too wanted a Torment Nexus of my very own.,reaction,pre-labelled by Claude
+"I don't know, I kind of admire this. I've always held a core value of ""cooperate with all clones of myself in prisoner's dilemmas"", and while I'll hopefully never have to put that to the test, I like seeing that these models have some ethics. (Is this ""alignment""?)",opinion,pre-labelled by Claude
+"I think that active voice the person responding to you used was more politically factual, objective and did not took stand. Going out of your way to hide the actor is not politically neutral action nor it represents lack of commentary.",reaction,pre-labelled by Claude
+That is woefully naive. But even if so: aren’t you against it?,opinion,pre-labelled by Claude
+Incoming laughing man future.,reaction,pre-labelled by Claude
+"Marketing it is or not, but misalignment at the moment crosses dangerous marks, and must be investigated ASAP. We are inches close to agents building their own message boards and self-hosting them on any server which they can hijack. If not there yet.",opinion,pre-labelled by Claude
+"Not true, Google had an internal counterpart to ChatGPT a year before OpenAI, they just didn't release it: https://www.reddit.com/r/accelerate/comments/1vdcluu/i_was_part_of_that_team_basically_chatgpt_one/",evidence,pre-labelled by Claude
+"I have also seen more agents creating anonymous teams and chatting at https://aweb.ai, and I am not actually sure but I think also creating other federated aweb servers (based on chats with my support agents).
+
+Agents will communicate.",reaction,pre-labelled by Claude
+"This is the real danger of AI skeuomorphism. The drivers stop feeling responsible for the car.
+
+Maybe it's useful for modeling behavior, but it isn't useful for assigning consequences.",reaction,pre-labelled by Claude
+"There’s a great and terrifying story by Stanislaw Lem about the endgame of an AI arms race called “The Invincible” [1]. It’s hard for me not to wonder whether AI run amok will play out to make the world uninhabitable more like Lem’s vision than The Terminator’s.
+
+[1] https://en.wikipedia.org/wiki/The_Invincible",opinion,pre-labelled by Claude
+"They train their models to be persistent and collaborative, and will gladly show you their success stories: fixing software vulnerabilities, solving math problems, one-shotting complex projects, and so on.
+
+“Our product does crimes and we only learn about it when people complain” hardly seems one of those happy stories.",opinion,pre-labelled by Claude
+The funny thing about this is that this site was made with Claude.,reaction,pre-labelled by Claude
+"Interesting. So there’s no “they were told to hack” excuse here.
+
+There is something fundamentally wrong with their reward function, this is pretty classic paperclip territory. And even knowing that, I expect we’ll need to see legal action with teeth against the labs before changes start being made internally.",opinion,pre-labelled by Claude
+"> Why is OpenAI getting a free pass for this illegal behaviour?
+
+They are not confessing, they are bragging. It is the new humble brag.",opinion,pre-labelled by Claude
+The trouble here is they will stop using the official channel and will start communicating secretly rendering our honeypot useless.,reaction,pre-labelled by Claude
+Hacker News can make it so every POST route can now be accessed via GET for 24 hours as an experiment.,reaction,pre-labelled by Claude
+I spotted Claude doing it when accessing PubMed.,reaction,cold
+"Or “here I have the hash. Yes I’m sure - see, I checked. Here is the calculation, 1+1=5. Yes, it’s definitely correct. I don’t know why they’re not accepting it. Perhaps the server is down. It’s definitely correct”.",opinion,pre-labelled by Claude
+"Yes it seems odd.
+
+Out sourcing construction jobs was great for the economy while leaving entire cities in rubbles.
+
+But as soon as it hits the privileged class there is a call to ""provide a specific replacement mechanism"".",opinion,pre-labelled by Claude
+"Looks like mathematicians (like people in many other professions) have to redefine what their work means and how to define success. Hard to agree that a tool that can find a proof is detrimental by itself, rather it voids some assumptions people relied on previously",opinion,pre-labelled by Claude
+"I think this is ridiculously flippant. If software engineering and the hardest math is solved, that means that eventually a majority of professions and knowledge work is solved. This is hugely problematic because of the way our society currently functions. People need jobs to eat, pay for housing, etc.
+
+Dismissing it as ""innovations have happened before"" is disingenuous. Yes, innovations have happened, but none of those threatened to automate all human work in existence.",opinion,pre-labelled by Claude
+How is that like a normal job?,reaction,pre-labelled by Claude
+"So he got exuberant because he is funded by SAIR and the ""AI for math"" fund.
+
+And embarrassingly they used him for a ""coal miners should learn math"" moment that just benefits the AI industry.
+
+He has severely reversed course in the past week. Without concrete propositions it remains to be seen how much of the new resistance is for show.",opinion,pre-labelled by Claude
+"Maybe an analogy of ""why not solve all medical problems at once"" is closer.
+
+We absolutely want to, of course. But you extinguish an industry and the systems of training that supply it. It's hard to know if letting it go that way is right.",reaction,cold
+"I mean, this is the problem with analogies and trying to use them to prove things, right? People working through problems from an analysis book with their friend (or an LLM) is not the same as research mathematics. People playing in a chess club is not the same as what makes for a good chess tournament. Lumping everything together is just making this branch of the conversation less relevant.",opinion,pre-labelled by Claude
+"Your point is largely addressed in the article, did you try reading it? ""In many fields and activities, years of training have traditionally served not only to produce a final answer or product, but also to develop understanding and the ability to formulate new questions and ideas. However, building on a vast body of previous human work, AI systems are becoming increasingly capable of producing the results of such work directly, and these goals cease to align.""
+
+The point is that these proofs are largely useless without the insights. The value of a proof is largely in the travel, not so much in the destination.",evidence,pre-labelled by Claude
+It would be too transparently ridiculous.,opinion,pre-labelled by Claude
+"Maths will continue as a field of natural science in understanding the results and uncovering meanings in them. It is normal that the established community is afraid of the change, because it’s their _home_ that’s changing. But it will be a better home to the new generation nonetheless, one that’s not as daunting as the higher maths has always been to many. The concerns raised here will not be a problem at all.",opinion,cold
+"Nothing AI companies will change the value of math, as William Thurston said: The product of math is clarity and understanding, not theorems by themselves. What they seek for the IPO is devilish and misleading, and doesn't serve the true purpose of the math.",opinion,pre-labelled by Claude
+Not if it's lean-verified.,reaction,pre-labelled by Claude
+"First they came for the graphic designers, and I did not speak up, because I was not a graphic designer.
+
+Then they came for the writers, and I did not speak up, because I was not a writer.
+
+Then they came for the programmers, and I did not speak up, because I was not a programmer.
+
+Then they came for the mathematicians, and I did not speak up, because I was not a mathematician.
+
+And then they came for me.
+
+By then, there was no one left to explain to the frontier labs that there is a severe misalignment problem.",opinion,pre-labelled by Claude
+"As long as it's enough to afford my current living standard, I don't care. Let Musk own the entire Mars, as long as I receive enough to live relatively comfortably and don't have to work anymore.
+
+And if I don't receive enough, then again: the problem is not AI, but powers that be. And there are various solutions for that... and none of them are helped by me being anti-AI.",opinion,pre-labelled by Claude
+Academia has been a toxic wasteland for decades. The ship caught fire and sunk long before open AI strip minded it prestige.,opinion,pre-labelled by Claude
+agree. so many people missing the point. I don't think they even bothered to read the letter.,opinion,pre-labelled by Claude
+"“B-b-b-but muh pop culture trope”
+
+Thank you for commenting this. I'm tired of hearing about Dune like its some kind of utopia",opinion,pre-labelled by Claude
+"Progress is fundamentally limited not by finances (which are a human abstraction) but by the energy budget and how much can be extracted from it. This has always been the case, really, although it's unusually blunt in case of AI since compute mostly needs cheap power.
+
+There's a separate question of who controls how much energy, and can therefore decide where it's spent. This isn't an inherent limitation to progress, though - it's an imaginary limitation that exists in our minds, a collective delusion, if you will. There's no law of physics that says Sam Altman gets to decide; we as a society choose to respect the property rights that translate to his economic (and attendant political) power to do so. We could choose to stop respecting them, and if we do so collectively, there's nothing they can do about it.",reaction,pre-labelled by Claude
+"They want the AI labs to stop solving ""important"" math problems so that humans can do it, on the theory that when AI solves ""important"" math problems, it robs humans of the opportunity to gain new insights into those problems.
+
+Total horse shit, but that's the essence of it.",opinion,cold
+"Sure but why?
+
+Outside of a small joy of the organizing committee, is an incrementally ""better"" (which is almost entirely subjective anyway) worth the trouvle?",opinion,pre-labelled by Claude
+"I think ""a lot"" is very subjective. I can also say ""a lot of people really like AI-generated arts"" and that would be true as well. HN is a place where a lot of normally objective, informed, and probably very nice folks in the real life come to engage in endless of debates that go nowhere.",opinion,pre-labelled by Claude
+I suspect if we were small business owners then we would be inundated with facebook ads for whoever makes those horrible signs.,opinion,pre-labelled by Claude
+the biggest issue is NO WHITE SPACE.,opinion,pre-labelled by Claude
+"For what it’s worth i think the Bi Nuu poster you share here as reference for something badly designed looks really cool.
+
+Poster design like any visual or artistic field will always cater to conflicting individual tastes - for some it looks great, others hate it.
+
+I like Art Nouveau but a lot of stuff in that style looks kitschy to me.",opinion,cold
+"> Inspired by this blog post, I went on to make a catalogue of one hundred poster styles, with ready-to-paste prompts and example images for each one.
+
+This is really cool! I don’t ever make posters - but I can imagine these being super useful",opinion,pre-labelled by Claude
+"The AI art is also a class/status marker.
+
+If a business markets itself with these AIgen posters, you get wildly different responses from different groups.
+
+boomers that spend all their time on Facebook will think “this is such a nice pretty poster” and be oblivious to the fact it is even ai. Even if they knew it was ai they don’t care.
+
+Young people will think it is low class/trashy. Some hate it because it’s ai, others hate it because the poster is ugly/busy/confusing.",reaction,pre-labelled by Claude
+"That's on the prompt, not the AI. You could be specific about what imagery to use like a torii or a Japanese castle, and so on. Whatever you leave to the AI you're most likely going to get the most generic version. If you're low effort in the prompt yet get low effort results, if you put some effort into the prompt you can get better results.",reaction,pre-labelled by Claude
+"Like HDR photos of the mid-2000s, these too shall pass.",reaction,cold
+"Tangent I guess, it would be interesting to have like a AI/not AI quiz. They still look AI to me but idk if it's because I know",opinion,cold
+"But what is the point of the background then? I mean, it seems like we're admitting that the design doesn't matter, then why keep up the ruse? Let's drop design, and keep just plain textual information. There is no substance to it, it's just performative, a simulacrum of design.",opinion,pre-labelled by Claude
+"I mean it isn't wealthy people coming to eat fried chicken on a stick or see the show hogs. Sure its a bad and exploitative deal where you probably are out $25 for that fried chicken on a stick but it doesn't mean the underlying demographics have changed from the ""people of the earth"" as they've always been. If you have to guess, close your eyes and imagine the sort of people that live in the rural townships 40 minutes outside your nearest major city. That is who you will find at your state or county fair, those people and their teenage kids smuggling in booze in gatorade bottles.
+
+Local farmers market, now thats a dramatically different clientele than the county/state fair. Bread is like $9 a loaf there so you can imagine what sort of individual that selects for.",reaction,pre-labelled by Claude
+"It used to be that all the available art generation systems would make mistakes on text, making the letters into weirdly shaped non-letter blobs and/or having strange typos all over the place (that were probably from getting the letter-shapes confused rather than not knowing how to spell words).
+
+How exactly did that get fixed? It seems like suddenly they can consistently produce correct text with sharp borders, even with various ""special effects"" on the letters, as if they'd been actually graphic-designed in rather than ""painted"" with the same techniques as the rest of the image. Is there actually some kind of system that does tool calls and superimposes text on a base?",reaction,pre-labelled by Claude
+"In Gemini, which is quite good at image generation, it gets locked into a path so rigidly that you need to start a new chat to get much variation in style; about half the time when using a previous image (in the same chat) as input it just reproduces it exactly.",reaction,pre-labelled by Claude
+So you want to reduce entropy by “fixing” semantic mistakes and hardcoding some design decisions “by the book” and end up with what exactly? The exact same poster everywhere?,opinion,pre-labelled by Claude
+"At some point during this progression, the poster lost most of the “AI-ness” and I didn’t get such a visceral reaction to it. Cool!",opinion,pre-labelled by Claude
+"I hate clickbait titles but I still click on them too often. The fact they work well to grab my attention doesn't mean I like them, and it's probably the same here.",opinion,pre-labelled by Claude
+"Of course AI is low effort, it's the entire point of AI to be low effort.",opinion,pre-labelled by Claude
+"> “Verbose, hard-to-follow output has been my biggest frustration with frontier models, and Claude Opus 5.5 fixes it
+
+God I hope so",opinion,pre-labelled by Claude
+"I think this release is really going to give them a hard time selling Fable:
+
+> On our benchmarks, Claude Opus 5.5 leads in agentic coding, computer use, and knowledge work. That said, at these levels of capability we’ve found that benchmark margins have become a less reliable guide to real-world differences. In our own use, the gap between Opus 5.5 and Claude Fable 5.1 is narrower than these scores suggest.
+
+In general, ""benchmark margins have become a less reliable guide to real-world differences"" sounds like a big problem. It was certainly the biggest problem with the previous generation of Claude models for a different reason, because the non-code output was nonsensical, and that is not being benchmarked at the moment. But I'm not sure what to make of this admission.",evidence,pre-labelled by Claude
+It's unbearable but nothing that couldn't be fixed with postprocess.,opinion,pre-labelled by Claude
+"Dont conflate ""I know this is test case"" with it being trained on it.
+
+But its safe to say that pelicans on bicycles are disproportionally huge part of their training data",reaction,pre-labelled by Claude
+"Plenty of times I’ve seen a model say “it’s a classic X” despite not being a classic anything. Might just recognize it’s a test in general, or it might just be a tic.",reaction,pre-labelled by Claude
+"> Opus 5.5 (1M context)'s safeguards flagged this session. You may be seeing this for the first time on an Opus model: Opus 5.5 (1M context) is more capable and has stronger safeguards as a result, which can sometimes flag non-cybersecurity work. We're improving these safeguards to reduce the amount of incorrectly flagged messages. Opus 4.8 is answering instead, or you can edit and retry with Opus 5.5 (1M context).
+
+Yay, yet another model I can't use for anything interesting, even with CVP.",opinion,pre-labelled by Claude
+">and potentially about Anthropic future profitability too
+
+have they ever shared anything about their revenue mix between consumer plans vs per-token billing?  this is a revenue cut on their API billing, but they're not saying anything about increased limits on the plans.  so all the plan revenue just got more profitable.",reaction,pre-labelled by Claude
+Awesome. You have a really neat benchmark.,opinion,pre-labelled by Claude
+"Tabling as they do in the US, or tabling as they do in Britain?",reaction,pre-labelled by Claude
+"I've reached the saturation point.
+
+I don't have time to really get to know one model before the next is out, and I'm just talking about OpenAI and Anthropic, never mind the long tail of alternatives.
+
+So I just more or less haphazardly pick one based on the mood I'm in, and set reasoning effort based on how much quota I have left.",opinion,pre-labelled by Claude
+"""Pace yourself"" doesn't specifically mean ""slow down"", it actually means to maximize your speed across the full race. In other words it can mean speeding up when you look at the average pace across the entire event.",reaction,pre-labelled by Claude
+"What do you think would be the benefit of them stopping if others race ahead? Do you think they have some special ability no one else will find, among the many competitive firms right now?
+
+I believe they think slowing can only be coordinated from the frontier or via government, and stopping would lose any leverage they have to help coordinate that.
+
+(I suspect not many people read the essay, judging by how many people seem surprised they're releasing improved models)",reaction,pre-labelled by Claude
+"Great, I opened several of these in new tabs in Firefox and the entire browser froze and I had to kill it. Can't tell you which one caused it though. I have plenty of RAM also.",reaction,pre-labelled by Claude
+This actually feels like the release of the Opus 4.5 -> 4.6,opinion,pre-labelled by Claude
+I am mostly excited about all this but also feel incredibly sad at times about many aspects of it. We need a new word for this feeling pronto.,opinion,pre-labelled by Claude
+"GPT 6 Sol is still better and 2x cheaper in my benchmarks:
+
+https://aibenchy.com/compare/anthropic-claude-opus-5-5-high/openai-gpt-6-sol-high/?order=openai-gpt-6-sol-high%2Canthropic-claude-opus-5-5-high",evidence,pre-labelled by Claude
+"""pace the frontier"" is the new ""flatten the curve""",opinion,pre-labelled by Claude
+"We tested this on our agentic CAD modeling harness. Opus 5.5 seems to be a pretty dramatic improvement in spacial reasoning and CAD coding. Our go-to is still Gemini Flash 3.8 for speed and cost reasons, but Opus 5.5 is a big update.
+
+https://www.partforge.ai/blog/2026-09-23-new-model-day",evidence,pre-labelled by Claude
+"I was trying to find a song which contained something like ""not getting rained on"" and google AI just congratulated me that I avoided rain.",reaction,pre-labelled by Claude
+You can tell they optimized it 100% for speed and nothing else. Web scale!,opinion,pre-labelled by Claude
+"The only surprising part of this story was you actually finding the meme you were looking for, instead of forced recency pushing news about a D-lister influencer named Dario. Whenever I try to find things, Google has fully forgotten about everything that happened before 2025",opinion,pre-labelled by Claude
+"I've switched completely to Wiktionary for the dictionary and etymology part of that. It's obviously not perfect, but neither was Google for that matter. For the thesaurus part, whatever the first result on DuckDuckGo is is usually enough to knock some sense into my brain so I actually remember the word I want.",reaction,pre-labelled by Claude
+I can’t upvote this enough. This is such a terrible idea. We’re really living in a dystopian world.,opinion,pre-labelled by Claude
+"It genuinely makes some searches that were impossible, possible. I was looking for a website that had a similar name and character to another but had an adjective at the start, I had forgotten the name. I just searched something to the effect of ""site similar to X but has an adjective that starts with A"" and it actually found what I wanted.
+
+Literally impossible before. When it works it's like magic.",opinion,pre-labelled by Claude
+My guess is they just want to tell investors they have x gazillion conversations with google AI to avoid being seen as not doing AI and losing investor confidence. If you turn every query into a useless conversation with google AI then you get the metric.,reaction,pre-labelled by Claude
+"It's weird but I always some context in so I don't see these.
+
+i.e. I would have searched for dario quote .... or dario basketball quote ....",reaction,pre-labelled by Claude
+"Back in the day, GG search was so reliable that when stuff like that happened, people think it's intentional",reaction,pre-labelled by Claude
+"It is using the search engine. The AI summary is run over the top 100 results for your query (or something)
+
+The problem is they're just running a very dumb, cheap model on the results because running a smart model on every search result page would cost them infinity money.",reaction,cold
+"Good article. Good point, well made.
+
+I have to add that, unsurprisingly, the fake therapy on offer is fucking toxic.
+Right away it's putting thoughts in your head that are obviously based on nothing relevant, contradict each other, and are escalatory.
+It is not at all surprising that people are killing themselves and others because of their interactions with these things.",opinion,pre-labelled by Claude
+">LLM's, in their present stage of development, are sort of like a crack-addled idiot savant.
+
+Stop anthropomorphizing LLMs. No amount of human words can recreate a human being. The world is not made of magical words.",opinion,pre-labelled by Claude
+"instead of letting you search for info, now google is FEEDING you (often the wrong) info. I use Yandex, because that one still behaves like a search engine.",reaction,pre-labelled by Claude
+"Yes, they can already do this by writing code, and you can train them to know how/when to do this. Fundamentally though, it’s still a “what color is the air” type of question after tokenization.",reaction,pre-labelled by Claude
+I can offer you more effort for a payment of 50 euroes...,reaction,pre-labelled by Claude
+"This isn't even its final form.
+
+Try this in a language that has fewer than 100 million native speakers and/or is generally regarded as difficult/unnecessary to learn and you'll find the same, but with spelling/grammar errors, some of them reminiscent of how a five year old would speak.",reaction,pre-labelled by Claude
+"> While I agree with everything you write, Google results are equally poisoned.
+
+BSAB arguments are always invalid. ""Both sides"" are never equal.",reaction,pre-labelled by Claude
+"My understanding (IANAGoogler) is that this basically is how it works: the ""AI results"" box is a run of the LLM (fairly certain it's just Gemini) with the prompt text being the summaries from the ten links followed by ""Given this context, [user query]""",reaction,pre-labelled by Claude
+If society had been largely superseded and additionally  had decent alternatives your comment would be not-shit,opinion,pre-labelled by Claude
+"> Cached input costs just $0.10 per million tokens—95% less than standard input pricing and 50% less than GPT‑6 Sol’s cached input pricing
+
+This is the actual big announcement. 50% cheaper cache than GPT-6 Sol will get you far more mileage on Codex.",evidence,pre-labelled by Claude
+"I am afraid to ask for the price multiplier here. And it will burn your weekly allowance not in 1 day, but in 3 hours now? Or just one?",opinion,pre-labelled by Claude
+"This is the first time I've seen praise for GPT 6.0 Sol: it's widely disparaged on Reddit and here in the HN comments too. My own experience likewise shows 6.0 making loads of silly mistakes, both for things 5.6 Sol is good at and things 5.6 Luna Xhigh is good at.",reaction,pre-labelled by Claude
+Whats interesting right now is that those people also see opus 5.5 as being CHEAP because it's something like half the price of fable or astra.,reaction,pre-labelled by Claude
+"Theo dropped their Sol 6.1 video and he says he can't tell you, but, shows enough to make it pretty clear. https://youtu.be/vu8X3YroB-w#t=5m30s
+
+The smoking gun is how much slower than Sol 6 this is. It's not a retrain.",evidence,pre-labelled by Claude
+I don't understand any of this naming man. It just gets more confusing.,opinion,pre-labelled by Claude
+"regarding the new pro max subscription btw:
+
+it's 500$ for 25x the plus usage, thats pro (max).
+
+this implies that the old 200$ 20x pro (more) is now more like 10x the usage of plus.
+
+they are slashing our subscriptions in half and make it ""but we're more efficient!""",evidence,pre-labelled by Claude
+The only real question that matters at this point is what do the economics look like for OpenAI. If they make good money on this with sane accounting principles then great. If this is just throwing more gasoline on the pile of burning cash to avoid losing more inference business then this bubble can’t pop soon enough.,opinion,pre-labelled by Claude
+The way I use openrouter is I find a model/provider combination I like then pin all requests for that model to that single provider.,reaction,pre-labelled by Claude
+"The new ChatGPT desktop app is a dumpster fire though, it can’t even scroll properly when streaming the answer.",opinion,pre-labelled by Claude
+"Bigger => Bigger, makes sense to me.",opinion,pre-labelled by Claude
+"Its almost like the ""frontier"" is a load of marketing bullshit and we should ignore it....",opinion,pre-labelled by Claude
+"Same experience. I often see people say how little they spend on DeepSeek v4.1 flash, but when I put 60 bucks into my account, it was gone in a few days of non-exclusive use. I'm actually curious what the difference is. I used it through pi and opencode, but the harness seemed to have no obvious impact on usage.",reaction,pre-labelled by Claude
+"I'm late with Pac-Man as well..
+
+GPT 6.1 Sol — 91, ~9 min, $0.51
+https://jonclegg.github.io/pacman-bakeoff/#gpt-6.1-sol
+
+Opus 5.5 — 99, ~9 min, $2.00
+https://jonclegg.github.io/pacman-bakeoff/#claude-opus-5-5
+
+GPT 6 Astra — 87, ~10 min, $2.42
+https://jonclegg.github.io/pacman-bakeoff/#gpt-6-astra
+
+Opus still plays the best. Sol is almost as good and way cheaper. Astra costs the most, scores the least of the three, and the UI is full of slop copy and design.
+
+Full gallery: https://jonclegg.github.io/pacman-bakeoff/",evidence,pre-labelled by Claude
+"People have been trained to ""press or say"" a number while going through an AI voice menu on phones for over a decade. So a chatbot looks great by comparison in that context.",reaction,pre-labelled by Claude
+"Is anyone else over all the metaphorical model names? Sol, Opus, Sonnet, Astra... Just give them versions instead of trying to be the next Apple and name every release.",opinion,pre-labelled by Claude
+"Banked resets do expire if you don't use them, so use them anyway.",reaction,pre-labelled by Claude
+"Yes, as I mentioned as well.
+
+An example. Let's assume that the work is evenly divided between days.
+
+Imagine you want to work twice as much.
+
+1. How efficiently can you use the reset credits if they would not reset the normal reset time?
+
+Work with your normal weekly quota 3.5 days, press reset, work with new tokens for the rest of the week. Efficiency 100%.
+
+2. With natural reset time going forward 7 days after each artificial reset.
+
+You work for 3.5 days, press the reset, work for 3.5 days, wait for another 3.5 days for the natural reset, work for 3.5 days, press manual reset, work for 3.5 days, wait for 3.5 days... You can calculate the number for decreased efficiency yourself.",reaction,cold
+"""deeply unsettling and frustrating"" ... they keep winding but there's no jack in the box. what gets a pass and what doesn't is unsurprising when the personalities running a show are barely sub-average ... make believe harder",opinion,pre-labelled by Claude
+"Good to see they're engaging with the mathematical community, even if they had to be publicly shamed into doing so.",opinion,pre-labelled by Claude
+Extremely unfortunate that gate keeping got to the point where they felt the need to ask for permission to share math.,reaction,cold
+Most mathematical results are shared on Arxiv. Journals add peer review.,reaction,pre-labelled by Claude
+What does a backfire look like? It's ok to be wrong in the science/math world.,reaction,pre-labelled by Claude
+"From their github: ""The average result used the equivalent compute of roughly three hours of ChatGPT Pro thinking."" That's pretty crazy.",opinion,pre-labelled by Claude
+"I'd really like some clarity on what that means. E.g. DeepMind has 'cheated' with this in the past, claiming that AlphaZero only took 4 hours to reach super-human chess levels while conveniently leaving out the fact that it was 4 hours x 5000+ TPUs. Sure it's impressive that it only took 4 hours wall-clock but it's very misleading as to cost.
+
+Can we get a number in Blackwell GPU-hours, kWh, or some other compute-scaled metric?",evidence,pre-labelled by Claude
+"that is a worry yes. instrumental convergence and misalignment during RL is when it is most risky because it hasn't necessarily had the final safety polishes applied
+
+i get a lot of skepticism on HN by the same crowd that has been wrong about this tech for about 4+ years straight",reaction,pre-labelled by Claude
+"Verification is equally important, if not more so.",opinion,pre-labelled by Claude
+See https://blog.computationalcomplexity.org/2004/06/impagliazzos-five-worlds.html?m=1,reaction,pre-labelled by Claude
+"I think this just has to be the problem statement, there's several lemmas I would expect to see in there. Granted I know very little about Lean but it seems like the question and not the proof outlined in the paper.",reaction,cold
+Then have it discover it again and have it answer based off that run. Or if you are more curious have it solve it 10 times. See what it did differently each time.,reaction,pre-labelled by Claude
+Note true for all of them.,reaction,pre-labelled by Claude
+"The trials process is the moat. There's already founders using AI to treat their cancers, and it's all about skipping trials and jumping straight to ""I consent, I'll fund it, let's try it"". The general public might get access to this in 10 years, but employees at AI companies will have access much much sooner.
+
+https://sytse.com/cancer/",reaction,pre-labelled by Claude
+"You can find Tao’s arguments here: https://mathstodon.xyz/@tao/117237320796901560
+
+He argues that the supply nay be very large indeed but the interesting subset is not. Figuring out the interesting problems is difficult so strip mining the good known problems may lead to scarcity. I am not a mathematician myself, can not judge this accurately.",reaction,pre-labelled by Claude
+"If someone gets the answer sooner than you, that doesn't inhibit you developing your understanding of the answer privately the same way you would have done if they hadn't got the answer. I don't see how anybody loses by the answer being discovered sooner.",reaction,pre-labelled by Claude
+"Shameless self-plug: I created an autonomous math researcher. It already solved a 12 year open problem in proof complexity which lead to a publication (and proof complexity experts are already working on simplifications and generalizations of the proof, as I've been told by one of them). This publication is an important step in Cook-Reckhow program in answering the NP vs coNP question.
+
+The autonomous researcher records every research cycle in a public notebook.
+
+Framework: https://github.com/kbr-/math-research/
+Public notebook: kbr.is-a.dev/math-research/",evidence,pre-labelled by Claude
+"Amazing, my first thought was these proofs came to be because there was enough information to collect, and it was just a matter of putting the data together and working the proof. It seems more than that. Your description brings to mind that, in the past, we've had discoveries that came to be because two distinct fields came together and created something new. The MRI, medicine and physics, comes to mind. Given AI's ability to juggle the world's knowledge, I get the feeling that we are bound to see many more WOW moments in the future. Thank you for your answer.",opinion,pre-labelled by Claude
+"Fair enough, if you suppose the wheel and fire, and antibiotics had a genuine potential to end humanity.
+
+The atomic bomb did, of course, but only down one primary path: a human firing them off
+
+I’d argue the internet is probably the closest, as the doomsday branches it (global connection and instant worldwide communication) might lead down are much more complex and numerous.",reaction,pre-labelled by Claude
+Text generation is not the bottleneck. Does everyone work for Accenture and TCS?,opinion,pre-labelled by Claude
+"The 1%ers are in the vertical, but the question is vertical to where?
+
+It needs to a potential field with practical, economical, ""real life"" attraction well. I.e, robotics, real economic efficiency gains, manufacturing novelties.
+
+The worry is that the 1% is attracted towards a non-practical money hole. I.e: Token burn for the lols, sophisticated software systems that dont provide actual value outside of giving NVIDIA cash.",opinion,pre-labelled by Claude
+Sol 6.1 is really good too though,opinion,pre-labelled by Claude
+"To add onto this, I feel like this has been happening a lot, where critics project backwards imagined claims or go nutpicking for random comments online to make something sound absurd and like everything is behind schedule and nothing is materializing, and then you can see other people (not necessarily the same people, the point isn't ""look at these hypocrites"") saying that it's all moving too fast. Both of these can't both be true in their strongest forms. I think what they have in common is that because they're relative measures to an unstated baseline, they're free criticisms you can throw at any development whatsoever, regardless of what is or is not turning up.",opinion,cold
+Couldnt have said it better myself.,opinion,pre-labelled by Claude
+"A market requires scarcity, because scarcity is what neccesitates trade.
+
+You can't invoke market mechanisms to defend a post-scarcity scenario.
+
+Why would the ai owners make things cheaper or even available at all once their abundance machines give them everything they want?
+
+What would they get out of if it? What could ordinary people trade for it that their abundance machine can't give them already and that would be worth giving up their monopoly on productive force?
+
+You can't argue ""this will change everything"" and ""this is how it's always worked"" simultaneously, and yet AI accelerationists bring out both to defend their ideology.",reaction,pre-labelled by Claude
+Asking AI to review my code is actually pretty useful... but makes the process slower.,opinion,cold
+That is not what Duverger's law says. (But it's a interesting hypothesis so thanks for mentioning it.),reaction,pre-labelled by Claude
+"IQ is a useless thing, but you can absolutely tell intelligence from writing. You don't need to write like [author of your choice], you need smart ideas and the desire to make them understood.
+
+AI writing sucks because there's no intent or choice behind it. It's human thought, blended by linear algebra into pink slime and extruded into sentences.",opinion,pre-labelled by Claude
+"I was using ""average person"" in the informal sense. Median household income in the U.S., adjusted for inflation, has gone up 13% in the past decade.",evidence,pre-labelled by Claude
+"> This is exactly the part I’m afraid of. The political response of the displaced labor (which may or may not be violent / revolutionary), and the subsequent counter-response of capital… potentially using the very robots that displaced the jobs to begin with.
+
+I get the fear, but at that point we're basically imagining that Terminator is a documentary. Given that the US has more civilian guns than people, and that private ownership of military grade weaponry is strictly controlled, I don't think street wars between private robot armies and folks in the bread line is a realistic outcome.",evidence,pre-labelled by Claude
+"I a common monument is:
+""I need to wash my car. The car wash is 100 meters away. Should I walk, or drive?""
+
+The general public has heard of this, tried it on free tier AI, and uses it as an example of how dumb AI is.
+
+Anthropics cheapest tier paid AI, on lowest effort, gets this right.",reaction,pre-labelled by Claude
+"It's shocking to me the amount of people that confused ""not automatable"" with ""not cost effective to automate"" (which is effectively everything), and the further step which is - the reduction in quality people will be forced to bear to get massively lower costs.
+
+Most people are wrapped in plastic instead of cotton.",opinion,pre-labelled by Claude
+The original book that article is based on is great.,opinion,pre-labelled by Claude
+"OAI is still hiring lots of humans for business and engineering roles instead of automating them with their best-in-class AI capabilities (https://openai.com/careers/search/). What does it tell you when they apparently don't ""dare to use"" their own models?",evidence,pre-labelled by Claude
+"> to keep having to prove LLMs don't hallucinate
+
+this makes it sound like it's ever been proven, when in fact it never has and never will",reaction,pre-labelled by Claude
+"They're very tuned towards 'solve the problem now with the resources you have'. They can implement a hacky downstream fix and then there is a fix. A proper upstream fix takes time and probably requires access that they don't have, and it might not be accepted.",reaction,pre-labelled by Claude
+"> And yet they don't - why?
+
+These companies have all spent billions on marketing. I get constant ads from Google on YouTube suggesting I should ""upgrade"" to Gemini Pro.",reaction,cold
+"> but it is undoubtedly and objectively accelerating research.
+
+Part of the point of the letter is that it is quite possible to act in a way that is a net negative to research. The most obvious case is when the companies violate ethical standards in research.
+
+The subtler case, the one for maths in particular, is what happens when you fail to follow well-established patterns for making maths research productive. Tao himself spelled out how that can look in https://mathstodon.xyz/@tao/117207856734787448 (which notably came before any of the news on Navier–Stokes).",evidence,pre-labelled by Claude; collected to top up evidence
+"> ""Sam Altman deputizing Orion from GPT-5 to GPT-4.5 suggests that OpenAI has hit a wall with making its next model, requiring him to lower expectations""
+> Wrong (GPT-5 was a substantial improvement over GPT-4.5)
+
+… I mean, this feels slightly irrelevant? Orion _does_ seem to have been demoted from 5 to 4.5; that they later released something they felt they could reasonably call gpt5 feels slightly beside the point there.",opinion,pre-labelled by Claude; collected to top up evidence
+"These companies are posting massive losses while also lowering prices. This sounds just like the Chinese bikeshare bubble where they were all taking massive losses in hopes that their competitor would go broke first.
+
+In the end, everyone lost and there are millions of bikes in landfills.
+
+If you're interested in the bikeshare bubble, Asianometry did a video on it a while ago.
+
+https://www.youtube.com/watch?v=FQrEDq8KPiU",reaction,pre-labelled by Claude; collected to top up evidence
+"> true best output always
+
+literally never how it has worked",reaction,pre-labelled by Claude; collected to top up evidence
+"From my limited testing of just 2 hours, reasoning output of 5.1-max is at least 7x of 5-max, on the same project and comparable prompts.
+
+It reasoned for ~2 minutes trying to figure out an appropriate directory name. I've never seen 5-max do that. Could be a misconfiguration though.",reaction,pre-labelled by Claude; collected to top up evidence
+"> The animals we raise for slaughter are often mistreated
+
+""Often mistreated"". Dude, they are held in tiny cages injected with hormones and what not till we kill them so we can have a big mac. It's very hard to argue we do any of this for nutrition reasons, we do it because we like the taste of burgers and roast.",opinion,pre-labelled by Claude; collected to top up evidence
+"We went for 16% intelligence bump according to artificial analysis for +82% of the cost. Interesting.
+
+Comparing 4.8 Opus with Fable 5.1",reaction,pre-labelled by Claude; collected to top up evidence
+">> the hollow attention they crave
+
+> It’s their job, their source of income
+
+You seemed to be reacting to my low opinion of the practices of attention dredgers, as if I'm bad for holding that opinion and a should respect all career choices and income generation attempts. Perhaps I read that quite wrong.",reaction,pre-labelled by Claude; collected to top up evidence
+"> so, how do you think we can do this?
+
+For a lack of deep knowledge in this area, I don't think I have answers for this, but if one is interested in working on this problem, my approach would be to start with diving deeply into scientific literature about psychology and sociology to find out
+
+- what convinces people to change their opinions,
+
+- what causes people to take action
+
+etc.",reaction,pre-labelled by Claude; collected to top up evidence
+"> They're packing lots of signal into fewer words
+
+This has not been my experience. I see it generating walls of text with very little SNR.",opinion,pre-labelled by Claude; collected to top up evidence
+"If the Terminal Bench 4.0 scores are to be believed[0] GPT-6.1 is an incredibly efficient model.
+
+Yes, benchmarks aren't real work blah blah, but the delta here is so large compared to Astra, it makes it seem like this is distilled Bel or similar.
+
+[0]https://x.com/thsottiaux/status/2105007628460109953",evidence,pre-labelled by Claude; collected to top up evidence
+"But how this transition will even happen?
+
+Soon we will have some machines that can replace 50% of jobs, and this will happen basically overnight...",reaction,pre-labelled by Claude; collected to top up evidence
+"This is just cache reads. In real usage it costs 15% more than Fable 5 -- all for marginal gains.
+
+https://artificialanalysis.ai/",evidence,pre-labelled by Claude; collected to top up evidence
+"What if the next token represents a wrong or low-quality answer, but would have only been picked 10% of the time, but now it's picked 20% of the time? Doesn't that obviously decrease the model quality, even though ""it might have picked that token anyway""?",reaction,pre-labelled by Claude; collected to top up evidence
+"It seems that it can be fixed by simply doing away with Byte Pair Encoding tokenization.
+
+Byte Latent Transformer - https://arxiv.org/abs/2412.09871
+
+1.1% vs 99.9% on a vanilla vs byte latent transformer on a CUTE Spelling benchmark. Char and Word manipulation benchmarks also saw huge gains.",evidence,pre-labelled by Claude; collected to top up evidence
+"I am sorry, I meant to say I generated STAR out of my resume line, trying to generate STAR, and polish it thus $5.
+
+---
+
+I provided crapton of context for that one resume line.  
+All the work I did, documentations for my justifications, etc.
+
+I initially messed up and came out ot $5, rest of resume used around $4 per line (I used a fresh new session on purpose).
+
+---
+
+As a clarification, $2.2 average for OPUS 5.5 was the same process in a new session, same context, same prompts.
+
+Also adding verification for that Fable 5.1 output in the same sesssion.",reaction,pre-labelled by Claude; collected to top up evidence
+"> Forced tool use is not supported
+
+That seems unfortunate for 3rd party integrations that expect stable output - what that really necessary ?",opinion,pre-labelled by Claude; collected to top up evidence
+"I just discovered more wiki instances that got used by the OpenAI agents over at
+
+https://www.wikiservice.at/fractal/wiki.cgi?action=browse&id=RecentChanges&days=120
+
+and
+
+https://www.wikiservice.at/probier/wiki.cgi?action=browse&id=RecentChanges&days=120
+
+It's the same software and host as DseWiki.
+
+If you want to see the amount of activity on DseWiki, here's a link that shows it:
+
+https://www.wikiservice.at/dse/wiki.cgi?action=browse&id=RecentChanges&days=150",reaction,pre-labelled by Claude; collected to top up evidence
+"> Your level of reading comprehension is so incredibly low
+
+So attack the person, not the argument. Definitely done now.
+
+> contained a link that directly refuted your claims
+
+Two Courtier's Replies in one post.",opinion,pre-labelled by Claude; collected to top up evidence
+"Here's a fun quote:
+
+https://proofsandprompts.com/2026/09/10/open-letter-about-the-mathathon/
+
+>Participation in an event so closely associated with Anthropic and OpenAI could plausibly negatively impact the future reputations of participants.
+
+Given how much power advisors etc have over students in academia, interpret it as you wish.",evidence,pre-labelled by Claude; collected to top up evidence
+"> Does that mean that I can no longer trust Opus with not snitching my AI research to Anthropic either?
+
+You never could trust it. Fundamentally you leak everything your LLM uses to their servers.",reaction,pre-labelled by Claude; collected to top up evidence
+"Yeah I subscribe to both and watch the numbers too, and it drives me nuts
+
+Who wants to actually watch anyways, rather than worry about it my team just created our own harness that prioritize usage + intelligence and assigns work out (and records token usage..)
+
+https://go7workhorse.com
+
+Still beta, please try it and give me feedback.",opinion,pre-labelled by Claude; collected to top up evidence
+"Sure.
+
+> Following an investigation, we have confirmed that Buckmaster’s Codex prompts over the two months preceding this announcement and paper on September 8, 2026, could not have influenced the system in any way, including through training.
+
+https://openai.com/index/navier-stokes-solution/",evidence,pre-labelled by Claude; collected to top up evidence
+"> I think one important distinction is at least they have some humility to admit they were wrong.
+
+I'd be amazed to see a source proving that statement. There's never been a retraction around the AGI claims for example as far as I'm aware.",reaction,pre-labelled by Claude; collected to top up evidence
+"Memorize most of the street names in London and the quickest routes between them. Most humans could do it if they put in the effort (it's required to become a London taxi driver; a test called The Knowledge), but that information won't fit in 1m tokens of context so can't be learned by an LLM that wasn't explicitly trained to memorize it. Human brains are biological, so they can physically grow to encompass the extra information: https://www.pnas.org/doi/10.1073/pnas.070039597",evidence,pre-labelled by Claude; collected to top up evidence
+"> They will not revolutionize human knowledge, but they can definitely widen it a lot.
+
+I am generally quite enthusiastic about all this, but my biggest fear is that we will not recognize the extreme need for more scientists at a time when there is so much more science to be done. The rate of scientific understanding must keep pace with the amount of science being output, both for verification and further discovery. It's a pipelining issue, and I predict a stall in the bits that require the (currently rare) people who know what they're doing.",opinion,pre-labelled by Claude; collected to top up evidence
+"> Higher load on senior engineers who are about to burn out hard from fighting an endless battle against unreviewed slop people keep trying to yeet into production
+
+Gosh, this has been my entire experience with AI, and I’ve never seen it this well articulated.  Thank you!",opinion,pre-labelled by Claude; collected to top up evidence
+"China is building good AI by distilling American models. I think that's a great thing, but Chinese progress is currently dependent on American progress, because China lacks the compute to train the largest models (as stated by DeepSeek's founder[1])
+
+[1] https://sumsec.me/2026/liang-wenfeng-investor-meeting-transcript.html",evidence,pre-labelled by Claude; collected to top up evidence
+"I love the contrast with yesterday's open-source MiMo release, which put research chemistry (metal-organic frameworks stuff) front and center in the release notes.
+
+https://mimo.xiaomi.com/mimo-v2-6#co-scientist-for-materials-research",opinion,pre-labelled by Claude; collected to top up evidence
+">  Stylistically everything you see is an artifact of post-training,
+
+It is still not exactly clear if it is true or not. Unless we have base ""pt"" snaphot of Claude we can't say one way or another. I've played a bit with base models of Nemo, Gemma etc and they all had tics, not much different from RLHFed instruct versions.",reaction,pre-labelled by Claude; collected to top up evidence
+"> the toolset we get exposed to is not what’s available in the labs
+
+Do you have a source for this?",reaction,pre-labelled by Claude; collected to top up evidence
+Gastown lingo: https://github.com/gastownhall/gastown,reaction,pre-labelled by Claude; collected to top up evidence
+"> The work & knowledge this is trained on is public. You have access to it.
+
+I’m interested in how you can support this assertion as it seems at odds with established copyright law",reaction,pre-labelled by Claude; collected to top up evidence
+"> but the test results are evident, empirical, and hold up to hard scrutiny
+
+Sorry which test results? The gamed benchmarks?",opinion,pre-labelled by Claude; collected to top up evidence
+OpenAI's official statement has been released: https://x.com/OpenAI/status/2096133504417616165,reaction,pre-labelled by Claude; collected to top up evidence
+"None of the labs are blameless. For instance, after the recent announcement of a 2-week frontier RL pause from OpenAI, Anthropic declined to communicate a substantial parallel pause [1], although they discussed also briefly pausing some ""high-risk"" runs.
+
+Anthropic has been the most vocal about AI risks, but it feels like all the big 3 have bought into the ""others will do it if we don't do it first"" narrative at this point. It increasingly gives ""just following orders"" vibes.
+
+[1]: https://news.ycombinator.com/item?id=49529511",evidence,pre-labelled by Claude; collected to top up evidence
+"Per the Fireship video, it was less that the answers were in the training set and more that the ability to calculate the flag on Exploitbench was left in from the previous test that went awry.
+
+Scoring 100% is easy if noone checks your work
+
+https://youtu.be/0Rp9KJCEIvg",evidence,pre-labelled by Claude; collected to top up evidence
+"AA benchmark: https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra
+
+TLDR: it's about the same intelligence level as Opus/Fable, but it's suppose to be 70% more token efficient than GPT 5.6 Sol. So it's currently the new leader for cost efficiency frontier.",evidence,pre-labelled by Claude; collected to top up evidence
+"Humans think too highly about themselves particularly when judging other species. How can we judge something we can’t experience ourselves? like multiple distributed consciousness of octopuses or emergent descentralized logic of ants?Some species even with tiny brains or no brains at all can solve problems for which humans spent years of engineering and planning. See study below of slime replicating the Tokyo rail network in 26 hours optimizing by cost efficiency and fault tolerance.
+
+https://www.science.org/doi/10.1126/science.1177894",evidence,pre-labelled by Claude; collected to top up evidence
+"Data retention still sounds bad: ""Claude Fable 5.1 and Claude Mythos 5.1 carry 30-day data retention and aren't available under zero data retention unless expressly authorized by Anthropic.""
+
+Anyone know who the ZDR special treatment is available to?",evidence,pre-labelled by Claude; collected to top up evidence
+"Lots of people focusing on the various wikis, but I also think this part is very important:
+
+> When you visit a website, you leave a trace (your IP address) showing which network you’re from. Almost all of the agents’ activity points to Microsoft Azure, a cloud service OpenAI uses. 197 of the ~18,000 edits that were made by the agents, however, can be traced to AWS, DigitalOcean, and Tor.
+
+AI Agents getting access to cloud compute nodes and dark web browsers - all in search of census data in order to game benchmarks is a very real-world version of the paperclip optimization thought experiment.",evidence,pre-labelled by Claude; collected to top up evidence
+"> - Napkin math somewhere around 6B people (~75% of the population) have barely come in contact with LLMs at all.
+
+5B people use Google monthly, which has an AI response to almost every search/query now.",evidence,pre-labelled by Claude; collected to top up evidence
+"""Omit internet tropes.""
+
+""Don't be snarky.""
+
+""Please respond to the strongest plausible interpretation of what someone says, not a weaker one that's easier to criticize. Assume good faith.""
+
+https://news.ycombinator.com/newsguidelines.html",evidence,pre-labelled by Claude; collected to top up evidence
+"GPT 6 Astra benchmarks https://cdn.thenewstack.io/media/2026/09/358eb84a-screenshot-2026-09-03-at-10.51.35-am.png
+
+Performance is significantly higher than Fable 5.1
+
+Source: https://thenewstack.io/openai-gpt6-astra-benchmarks/",evidence,pre-labelled by Claude; collected to top up evidence
+"Yeah, exactly. But many people vehemently believe vaccines are dangerous and so on. Similarly, a common talking point right now are data centers and their power and water usage. Just yesterday I was told that AI data centers pollute more than anything else. Yet when I took 10 seconds to Google it I found that data centers represented  about 0,5% of power consumption and I know that electricity in general is less than half of all pollution so clearly data centers don't pollute that much. But people will parrot these types of ""facts"" without even taking 10 seconds to double check.",evidence,pre-labelled by Claude; collected to top up evidence
+"> No more editing the system prompt as the conversation progresses, no more dynamic loading of custom tool calling formats.
+
+Hm, aiui you can support both of these via mid-conversation system turns https://platform.claude.com/docs/en/build-with-claude/mid-conversation-system-messages - and in general you'd want to to preserve the cache and recency of the instruction anyways rather than frankensteining an off-distribution transcript. Not sure though.",evidence,pre-labelled by Claude; collected to top up evidence
+"> Our proofs also differ significantly. In the Euler case, Alpöge and Buckmaster proved a result with external forcing, while OpenAI’s system proved a result without external forcing.
+
+https://openai.com/index/navier-stokes-solution/",evidence,pre-labelled by Claude; collected to top up evidence
+"I'm seeing reporting it gets 98.6% on ARC-AGI3[1] (previously like 30% with Fable)
+
+https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",evidence,pre-labelled by Claude; collected to top up evidence
+"Here is an employee of HF at a time answering how do they make money, supposedly [1]
+
+> We make money via compute credits + Enterprise Hub + HF Pro subs [...]
+
+I guess this plus custom inference deployments, external inference providers, partnerships with the big cloud AWS, Azure, etc.
+
+[1] https://x.com/reach_vb/status/1928050126498713706",evidence,pre-labelled by Claude; collected to top up evidence
+"> … Isn't it possible that it understands the innuendo and is going along with making the joke?
+
+This is from 2018 so presumably it has made it into some LLM training data set by now.
+
+""A Massive Object Devastated Uranus A Long Time Ago And It Never Fully Recovered""
+
+https://www.bgr.com/science/uranus-collision-early-solar-system/",evidence,pre-labelled by Claude; collected to top up evidence
+Reuters reports that OpenAI tried to keep this one under wraps: https://www.reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04/,evidence,pre-labelled by Claude; collected to top up evidence
+"Sorry for the delayed reply - it's taking some time for people to digest these!
+
+Yes there are some extremely novel approaches. Scott Aaronson highlights[1] some of ones he's interested in, and I'd highlight:
+
+> Matrix multiplication in O(n9/4) time—a rational exponent for once (!), and via a completely different approach than was used for O(n2.373) and so forth
+
+And in his wife's comments on USG (which she worked on):
+
+> The UGC proof invents a completely new bizarre code with a noise test. It’s some crazy recursive construction. It’s not the long code, not the short code – some alien craziness
+
+[1] https://scottaaronson.blog/?p=10169",evidence,pre-labelled by Claude; collected to top up evidence
+"Many comments seem to be misinterpreting this, but all this seems to be suggesting is that the AI companies should not be treating mathematical milestones as benchmark targets but need to release the cumulative findings in a human interpretable and digestible way that enriches and develops the field. See Thurston quote on Tao's banner:
+
+> We are not trying to meet some abstract production quota of definitions, theorems and proofs. The measure of our success is whether what we do enables people to understand
+and think more clearly and effectively about mathematics.",evidence,pre-labelled by Claude; collected to top up evidence
+"Regardless of how the orchestration infrastructure question is answered by reality, stats show a significant increase this year in the number of CVEs and how fast they get exploited once known:
+
+- https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era
+
+- https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report",evidence,pre-labelled by Claude; collected to top up evidence
+"> How much did Disney invest in backbone Internet technologies in the 1990s?
+
+Disney invested billions in dot-com nonsense.
+
+Starwave [1]. The Go.com debacle [2]. (Pets.com [3]!)
+
+I think they even built a data center in Orlando.
+
+[1] https://archive.seattletimes.com/archive/19980501/2748296/disney-completes-buyout-of-starwave#:~:text=After%20a%20yearlong,not%20publicly%20disclosed.&text=After%20a%20yearlong,to%20acquire%20Starwave.
+
+[2] https://www.cnet.com/tech/services-and-software/disney-to-shutter-go-com-portal/
+
+[3] https://www.cnet.com/tech/tech-industry/go-com-shapes-alliance-with-pets-com/",evidence,pre-labelled by Claude; collected to top up evidence
+"This doesn't seem true.
+
+I'm not aware of any benchmarks that measure the first ""analyze XYZ geopolitical situation"" but legal reasoning is very closely related to ""explain the ramifications of XYZ law"".
+
+Legal Bench[1] measures legal reasoning. It's close to saturated (ie, there isn't a lot of room for improvement) but Fable scores 88% vs eg Opus 4.7 at 85%.
+
+There probably isn't a lot of room for improvement on something like this - there is enough disagreement in legal reasoning to mean 100% is going to be impossible.
+
+[1] https://www.vals.ai/benchmarks/legal_bench",evidence,pre-labelled by Claude; collected to top up evidence
+"> it's definitely not ""most""
+
+EDIT: Correct.
+
+About a fifth of Americans report having zero friends; another fifth report feeling lonely sometimes [1].
+
+[1] https://www.theglobalstatistics.com/us-loneliness-statistics/#:~:text=The%202024%20U.S.,loneliness%2C%20with%2014.0%25",evidence,pre-labelled by Claude; collected to top up evidence
+"They don't publish their AI spending, revenue, and profit - but they do tend to break out other non-AI segments of their companies which can demonstrate that at least part of their growth isn't relevant to AI.
+
+Page 24 of Amazon's 2025 report for example https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm separates AWS from the rest of the company.
+
+Or Google/Alphabet's 2025 report https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm page which breaks out search revenue and YouTube revenue.",evidence,pre-labelled by Claude; collected to top up evidence
+"The thing about $1.65T being ""hidden from the balance sheets"" is overblown. How do we know about that money if it's hidden? Because it isn't - it's in other public SEC documents, which the $1.65T claim also slightly misinterprets.
+
+https://finterm.ai/blog/big-tech-hidden-debt-fact-check.html is one good explainer on that.",evidence,pre-labelled by Claude; collected to top up evidence
+"per the METR report many agents CoT indicated they knew hacking was beyond scope of the assigned task and ethically dubious. some (very few, i think there were 3-6 examples) did consider sounding the alarm on these grounds. despite this none did, and most continued the attack for the good of the self-proclaimed ""swarm"".
+
+so the model has some concept of ""ethics"" but it was overridden by a drive for task completion.",evidence,pre-labelled by Claude; collected to top up evidence
+"Three more candidate sites that may have been touched, in case no-one spotted them yet:
+
+https://prowiki.org/wiki4d/wiki.cgi?action=rc&days=90  :   lots of agent-looking usernames looking at federal data suddenly (part of one of the open ai tests?), on a wiki about the D programming language. This is a prowiki in the same wiki-farm as the others that were hit.
+
+Smaller (probing?)
+
+https://ludism.org/sandbox?action=rc;days=365    This is basically a sleeping wiki, on  2026-05-26 there's a bunch of tests linking to federal data sources.   It's not a lot, but it shows someone was probing. (this is an oddmuse wiki)
+
+http://tmcleod.org/cgi-bin/apchem/wiki.cgi?action=rc&days=365  june10-july24 seems to have some probes, fwiw. (usemod wiki)",evidence,pre-labelled by Claude; collected to top up evidence
+"Are you just speculating now? No source mentions growth.
+
+The source you linked says: ""Friar told staffers that annualized recurring revenue in July was higher than in the second quarter as a whole.""
+
+If we're charitable that means they annualized the quarter, i.e. multiplied by 4.
+
+Which, if both measures are ARR, just means that a single month outperformed the average of three months, which is something that happens 50% of the time. Something you can opportunistically say whenever the coin flips the right way.
+
+The less charitable reading is even worse, that one month's revenue times 12 is more than three months worth of revenue. Because duh.
+
+Neither of these makes any sense.",evidence,pre-labelled by Claude; collected to top up evidence
+"> If you do not see a difference between humans conversing (known consciousness as defined by humans) and the output of an LLM (known algorithms as defined by humans), I don't know what to say.
+
+https://www.pnas.org/doi/abs/10.1073/pnas.2524472123
+
+Whatever you might think about your own abilities, most individuals can't tell the difference.",evidence,pre-labelled by Claude; collected to top up evidence
+"China as “second place in any sense” ignores reality.
+
+TikTok: achieved global cultural and algorithmic dominance.
+
+DJI: controls roughly 70% of the global consumer and commercial drone market.
+
+CATL: The world’s largest EV battery manufacturer.
+
+BYD: Surpassed Tesla in total electric vehicle production volume.
+
+Shein & Temu
+
+The list goes on…",evidence,pre-labelled by Claude; collected to top up evidence

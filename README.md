@@ -126,45 +126,76 @@ company. It mentions a number but isn't built on it, so it's `reaction`.
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Hacker News comments from 12 of the busiest AI
+threads of August–October 2026, downloaded whole through the HN Algolia API
+(13,462 comments). I kept comments of 25–900 characters, in English, with no
+code blocks and not just a bare link. The 284 posts in `labels.csv` are:
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+- 40 from my first card sort
+- 180 random comments, 15 from each thread
+- 35 random comments that carry a link, a quote or a figure, added because
+  `evidence` was thin
+- 29 `evidence` posts added for criterion 1, found by screening 90 more
+  comments that carry at least two kinds of backing
+
+**How I labelled them:** Claude drafted the first definitions and pre-labelled
+the posts. The `note` column says where each label came from:
+
+- `cold`: 20 random posts I labelled myself before seeing Claude's labels.
+- `checked` / `corrected from …`: 15 of Claude's labels I went through. I kept
+  12 and changed 3.
+- `relabelled under the revised rule`: our cold labels matched on only 8 of
+  20, so I rewrote the `opinion`/`reaction` rule. Claude then relabelled its
+  pre-labels under my rule, including 4 of the ones I had checked.
+- `pre-labelled by Claude`: the rest are Claude's labels under my rule.
+- `collected to top up evidence`: the 35 and the 29 above. Claude screened
+  and labelled the 29.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `opinion` | 119 | 41.9% |
+| `reaction` | 108 | 38.0% |
+| `evidence` | 57 | 20.1% |
+| **Total** | 284 | 100% |
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
+> *The post:* "I dunno. You can argue over whether they're overpaying, but it's
+> not like Huggingface is Clinkle. They hit $150 million in ARR this year,
+> they have tons of runway, and according to reports, have just started to
+> even burn the money they raised a few years ago. …" Two more paragraphs
+> follow about how open and responsible Hugging Face has been, and what
+> Nvidia gets.
 >
-> *Could have been:*
+> *Could have been:* `evidence` or `reaction`
 >
-> *I chose, because:*
+> *I chose, because:* `reaction`. It gives the money figures, but then moves
+> on to stating other things about the company. The post isn't built as
+> "this backs up this", so the figures alone don't make it `evidence`.
 
 **2.**
-> *The post:*
+> *The post:* "Interestingly, it's practically a dead ringer for GLM 5.3's
+> version (running https://huggingface.co/incoai/GLM-5.3-NVFP4 locally):
+> https://i.imgur.com/QnzlSFp.png"
 >
-> *Could have been:*
+> *Could have been:* `evidence` or `reaction`
 >
-> *I chose, because:*
+> *I chose, because:* `reaction`. The two links show what the writer saw. The
+> post describes a resemblance; it isn't using the screenshot to prove a
+> point someone was arguing about.
 
 **3.**
-> *The post:*
+> *The post:* "Felix, just poking at this, and it is MUCH more pleasant to talk
+> to, thanks to your teammates for the work."
 >
-> *Could have been:*
+> *Could have been:* `reaction` or `opinion`
 >
-> *I chose, because:*
+> *I chose, because:* `opinion`. Claude first called it `reaction`, a thank-you
+> reply to someone on the team. But "MUCH more pleasant" is how the writer
+> feels about the model, and the thanks is wrapped around that feeling.
 
 ---
 

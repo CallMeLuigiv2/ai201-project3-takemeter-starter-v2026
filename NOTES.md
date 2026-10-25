@@ -94,3 +94,30 @@ rule it's `opinion`.
 Claude then relabelled its other pre-labels under the new rule, and 108 of
 220 changed. Counts now: `opinion` 119 (47%), `reaction` 108 (42%),
 `evidence` 28 (11%).
+
+## Milestone 4 — the dataset
+
+`labels.csv` has 284 rows: `opinion` 119 (41.9%), `reaction` 108 (38.0%),
+`evidence` 57 (20.1%). Where they came from and how they were labelled is in
+the README under The Dataset.
+
+**Topping up `evidence` for criterion 1.** After the relabel, `evidence` was
+28 of 255 (11%), with 4 posts in the test split. The 35 posts first collected
+for their links, quotes and figures only yielded 8 `evidence`, because most
+of them mention a number or link and move on. So the second pass looked for
+comments carrying at least two kinds of backing (a link, a quoted line, a
+figure, a test, a named source), spread evenly across the 12 threads. Claude
+read 90 of them under the revised rule and kept the 30 that are built as
+"this backs up this". Six that could go either way were left out, for
+example "Has the government stopped Google and Apple?" with a link. Is that a
+rhetorical question or proof?
+
+**One duplicate.** One kept post was the same OpenAI quote and link as a
+post already in the sample, from the same thread, minus the word "Sure." It
+would have leaked across splits, so it was dropped, which left 29.
+
+**Checks.** The notebook's own data check reports no problems and no
+warnings. There are no exact or near-duplicate texts. All three seeds (42, 7,
+2024) split 198 / 43 / 43, with a test split of 18 `opinion`, 16 `reaction`
+and 9 `evidence`. That puts criterion 1 at `evidence` 20.1% (target 18%), 9
+test posts (target 8) and largest label 41.9% (cap 45%).

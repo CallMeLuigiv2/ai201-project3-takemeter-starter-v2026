@@ -52,3 +52,45 @@ every thread would get its own pile.
    for Hugging Face." is aimed at the news. I noticed this one but it's about
    where a comment sits in the thread, which the thread already records, so
    it isn't a label.
+
+## Milestone 2 — labels
+
+Three labels, `evidence`, `opinion` and `reaction`. Definitions, examples and
+the decision rules are in the README under Label Taxonomy.
+
+**A label that didn't hold: `question`.** The first draft had a fourth label
+for questions. Only 11 of the first 220 posts were real questions, which would
+leave about 2 in the test split. Telling a real question from a rhetorical one
+was also the least consistent call. "Sure but why? … is an incrementally
+'better' … worth the trouble?" is a claim that it isn't worth it, dressed as a
+question. Real questions now go in `reaction`. A rhetorical question carrying
+a verdict is `opinion`.
+
+**Stress test.** Claude drafted the first definitions and pre-labelled the
+posts. I labelled 20 random posts cold without seeing its labels, then we
+compared. We matched on 8 of 20 (40%; guessing gets about 33%). Ten of the
+twelve disagreements were `opinion` against `reaction`:
+
+- 7 times Claude said `opinion` and I said `reaction`, on flat statements
+  like "Like HDR photos of the mid-2000s, these too shall pass." and "It is
+  using the search engine. The AI summary is run over the top 100 results…"
+- 3 times Claude said `reaction` and I said `opinion`, on first-person
+  verdicts like "Asking AI to review my code is actually pretty useful… but
+  makes the process slower."
+- The other 2: Claude called a link-and-screenshot comparison and a worked
+  calculation `evidence`. I called both `reaction`.
+
+The draft drew the line at "does it make a claim about the world?" That isn't
+how I was reading posts, so I rewrote the rule: `opinion` is how the writer
+feels about something, and `reaction` is stating or detailing something. I
+tightened `evidence` too. It has to be a "this backs up this" post, so a post
+that mentions Hugging Face's $150M ARR and moves on doesn't count.
+
+**Borderline post:** "Asking AI to review my code is actually pretty useful…
+but makes the process slower." It's the writer's own experience, which pulls
+toward `reaction`, but "pretty useful" and "slower" are a verdict. Under the
+rule it's `opinion`.
+
+Claude then relabelled its other pre-labels under the new rule, and 108 of
+220 changed. Counts now: `opinion` 119 (47%), `reaction` 108 (42%),
+`evidence` 28 (11%).

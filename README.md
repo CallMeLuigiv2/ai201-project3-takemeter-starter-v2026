@@ -54,34 +54,69 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `evidence`
 
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
+**Definition:** Makes a point and backs it up. The post is built around a
+link, a quote, a number or a test result that proves the point. A number
+mentioned along the way doesn't make a post evidence.
 
 **Example 1:**
+> "Claude Mythos 5.1 is identical to Fable 5.1, but it offers more permissive
+> safeguards for vetted individuals and organizations"
 >
+> Then why does it have separate datapoints for Terminal Bench, and score
+> higher? Something doesn't add up here??
 
 **Example 2:**
+> "Horizontal integration is the process of a company increasing production
+> of goods or services at the same level of the value chain, in the same
+> industry. …" [emphasis mine]
 >
+> https://en.wikipedia.org/wiki/Horizontal_integration
+
+### `opinion`
+
+**Definition:** Tells you how the writer feels about something: a like or a
+dislike, or a verdict that it's good, bad, useful, pointless, better or worse.
+Sarcasm counts, because it's a feeling aimed at something.
+
+**Example 1:**
+> zitron is a jester. He knows his audience and plays it well. It is
+> incredibly tiring to listen to his lies, but so are the AI boosters. I think
+> it is net zero
+
+**Example 2:**
+> Asking AI to review my code is actually pretty useful... but makes the
+> process slower.
+
+### `reaction`
+
+**Definition:** States, explains, describes, predicts or asks something
+without saying how the writer feels about it and without backing it up. A bold
+claim stated flatly is still a reaction.
+
+**Example 1:**
+> Like HDR photos of the mid-2000s, these too shall pass.
+
+**Example 2:**
+> How does this work if it doesn't change the output?
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `opinion` and `reaction`
 
-**The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+**The decision rule I used every time:** Ask whether the post tells you how
+the writer feels about the thing. If it does (a like, a dislike, a verdict
+such as "useful", "overpaid" or "terrible", or sarcasm), it's `opinion`, even
+when it's about the writer's own use. If the post only states, explains,
+describes, predicts or asks, it's `reaction`, even when the statement is bold
+("Then realize LLMs have zero of what anyone would consider intelligence").
+When a post does both, go with what most of it is doing.
 
+**A second rule, for `evidence` and `reaction`:** a post is `evidence` only
+when it's built as "this backs up this". One post gives Hugging Face's
+"$150 million in ARR" and then moves on to other statements about the
+company. It mentions a number but isn't built on it, so it's `reaction`.
 
 
 ---

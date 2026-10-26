@@ -297,9 +297,26 @@ about 11 points.
   (`pre-labelled by Claude`). They include the 64 posts collected to top up
   `evidence`. For the last 29 of those, Claude screened 90 comments and kept
   the ones it labelled `evidence`.
-- Claude also wrote the scripts that downloaded and sampled the threads and
-  built `labels.csv`. It ran the notebook and drafted this README and
-  `NOTES.md` from my decisions.
+- I handed Claude the mechanical work: the scripts that downloaded and
+  sampled the threads and built `labels.csv`, and running the notebook.
+  Claude drafted this README and `NOTES.md` from my decisions, and I went
+  back over them. The commits are mine.
+
+**Unit 6:**
+
+- We split the work. I delegated the runs to Claude: `baseline.py`, the
+  three-seed training runs and `agreement.py`. I labelled the 30 staff posts
+  myself, cold, on a page Claude built for it (posts shuffled, ids hidden,
+  the staff rules beside them), and committed `my_staff_labels.csv` before I
+  had the staff labels.
+- I made the calls: the four adjudications, and the fix. I asked whether more
+  epochs would overfit, and that question is what led to keeping the best
+  epoch by validation loss.
+- My baseline prediction is one of four that Claude drafted from what I knew
+  before looking. It says so under Baseline vs. Trained.
+- Claude drafted the unit 6 sections from our back-and-forth, and I go back
+  over everything it writes. The commits are mine, one per milestone, made
+  under my name.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
@@ -763,11 +780,55 @@ splits as before, with only the training changed.
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
+Three criteria are still missed after the fix. Two of them come down to the
+same pair of labels.
 
+**Criteria 3 and 4: the `opinion`/`reaction` line.** Macro F1 misses on seed
+42 only (0.568). `reaction` is at 0.40–0.50 on every seed and `opinion` at
+0.53–0.71. What I'd do next, in order:
+
+1. **Blind re-check of Claude's pre-labels on this line.** Label 40 of
+   Claude's `opinion`/`reaction` pre-labels myself, cold, without seeing its
+   labels or the model's guesses, and measure how often we agree. This is the
+   one thing the agreement report can't tell me, because it measured my
+   labelling and 249 of my 284 labels are Claude's. If we agree on fewer than
+   about 3 in 4, the labels are the problem: I'd relabel that line myself and
+   retrain.
+2. **If we do agree, collect more posts near the line.** About 100 more
+   first-person verdicts and flat bold claims, so each side has well over the
+   current ~80 training examples. Now that the model is trained long enough to
+   use `reaction`, the matrix is close to symmetric (8 each way on seed 42),
+   which reads as a hard line, not a lopsided one.
+
+**Why I stopped:** the unit allows one improvement, so that every change has
+its own before and after. Relabelling on top of the training fix would have
+mixed two changes into one result. Relabelling now, after seeing which test
+posts the model gets wrong, would also tune my labels to the test set. That's why no small relabel
+went in on top of the fix. It's step 1 above, done blind.
+
+**Criterion 5: the confidence gap** (0.071 on seed 2024). With 43 test posts
+each third is 14 posts, and one post moves the gap by 0.07. Across the two
+runs this criterion swung between 0.07 and 0.50, depending on the seed. What
+I'd do: get a bigger test split before reading much into it, which means a
+bigger dataset. A model that's barely more confident when right than wrong
+(seeds 7 and 2024) won't pass it reliably either, and the label work above is
+the way to fix that. Why I stopped: the same one-fix rule.
+
+**The measure itself.** Accuracy moves 11.6 points between seeds. One test
+post is 2.3 points. Every number in this README carries that much noise, and
+the only real fix is more labelled posts.
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
+
+I meant `evidence` to pick out posts that back their point up, and
+`opinion` against `reaction` to split the rest by whether the writer tells
+you how they feel. The model learned the first split well (`evidence` F1
+0.74–0.82, and only 9 of the 102 non-`evidence` test posts across the seeds
+called `evidence`), but not the second: among the posts it keeps out of
+`evidence`, it tells `opinion` from `reaction` 58% of the time, against 50%
+for a coin.
 
 
 

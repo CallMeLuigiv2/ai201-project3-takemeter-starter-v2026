@@ -492,12 +492,16 @@ called `evidence`.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 26 / 30 = 87%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
      of the 30 were chosen because they're genuinely ambiguous — you should be
      winning some of these. -->
+
+I labelled the 30 posts cold under `data/staff_taxonomy.md` and committed
+`my_staff_labels.csv` before I asked for the staff labels. Staff marked 7 of
+the 30 as borderline, and I matched them on 6 of those 7.
 
 **Disagreements**
 
@@ -515,24 +519,88 @@ called `evidence`.
      what you did across your own 200. -->
 
 **1.**
-> *The post:*
+> *The post:* "Everyone blames the hill at 18 miles. I split the field into
+> people who ran the first half under 1:45 and over, and the slowdown after 18
+> was almost identical for both groups. If the hill were the problem the fast
+> starters would fall apart harder."
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `analysis` / `hot_take`
 >
-> *My call, and why:*
+> *My call, and why:* Staff is right. Rule 1 asks whether the checkable fact
+> carries the argument, and here it does. The writer splits the field at a
+> 1:45 first half, which is a named comparison, and the whole conclusion
+> (it isn't the hill) rests on the two groups slowing down the same. I read
+> the confident opening, "Everyone blames the hill", as a take and stopped
+> there.
 >
-> *Which pile:*
+> *Which pile:* (a), the rule covered it and I applied it loosely.
 
 **2.**
-> *The post:*
+> *The post:* "Every injury thread on this forum is the same injury and the
+> same three replies."
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `hot_take` / `analysis`
 >
-> *My call, and why:*
+> *My call, and why:* I'd keep `analysis`. The definition asks for a
+> specific, checkable fact, and this post is one: a claim about the forum's
+> own threads that anyone could count. It isn't a feeling and it isn't a
+> verdict on the sport. It reports a pattern. Staff's own note says it "could
+> be checked in principle", and their objection is that no count is given.
+> The definition says the fact has to be checkable. It doesn't say the writer
+> has to show the count. The weak point in my reading is that the post
+> doesn't argue from the fact to anything else; the observation is the whole
+> post. Staff flagged it as borderline too.
 >
-> *Which pile:*
+> *Which pile:* (c), the rule is ambiguous here and my reading is defensible.
+
+**3.**
+> *The post:* "First run back after eight weeks out. Two miles, slower than my
+> warm-up used to be, and I don't care even slightly."
+>
+> *Staff said / I said:* `reaction` / `analysis`
+>
+> *My call, and why:* Staff, narrowly. It's a tweener. "Slower than my
+> warm-up used to be" is a checkable comparison, and rule 3 says recency
+> doesn't outrank evidence, which is why I went to `analysis`. But the
+> comparison doesn't argue anything. It describes the run, and the post ends
+> on how the writer feels ("I don't care even slightly"). The `reaction`
+> definition (just happened, about the writer, a feeling) fits all of it.
+>
+> *Which pile:* (b), the rules don't say. Rule 1 covers a fact that carries an
+> argument, and rule 3 says recency doesn't beat evidence. Neither says what
+> to do with numbers that only describe the writer's own experience.
+
+**4.**
+> *The post:* "Signed up. Card's charged, no going back, immediately regret
+> everything."
+>
+> *Staff said / I said:* `reaction` / `hot_take`
+>
+> *My call, and why:* Staff is right; I misread it. Rule 2 asks whether the
+> post is about a claim or about the writer. This one is all about the
+> writer, in the moment: signed up, card charged, regret. "Regret everything"
+> is a feeling, not a general claim about the world.
+>
+> *Which pile:* (a), the rule covered it and I applied it loosely.
 
 **What the pattern in my disagreements tells me:**
+
+- **Three of the four turn on rule 1: does the fact carry the argument?** I
+  went both ways on it, too strict once (#1) and too loose twice (#2, #3).
+  In my own taxonomy that's the `evidence` line ("this backs up this"), so
+  my `evidence` labels probably carry the same wobble. It's also the line my
+  model handles best (`evidence` F1 0.50–0.75), so the wobble didn't stop it
+  learning that label.
+- **Only one crossed the feeling against general-claim line** (#4), and it was
+  a misread. Staff labelled 20 of the posts `reaction` or `hot_take`, and I
+  crossed between those two labels once. That's the staff version of my own
+  `opinion`/`reaction` line, a feeling against a statement, and it's exactly
+  where my model fails (40 of 48 `reaction` posts called `opinion`).
+- So on these 30, I applied a written feeling-against-claim rule
+  consistently. That points the model's worst confusion away from me
+  applying my rule loosely. The limit is that this check measures *my*
+  labelling. 249 of my 284 labels were applied by Claude under my rule, and
+  this check says nothing about those.
 
 
 

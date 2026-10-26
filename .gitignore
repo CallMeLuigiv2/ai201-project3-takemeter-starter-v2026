@@ -28,3 +28,7 @@ Thumbs.db
 # NOTE: results.json, results_three_seeds.json and baseline_results.json are
 # deliberately NOT ignored. They're evidence the run actually happened, and
 # they're part of what gets graded. Commit them.
+
+# The staff answer key for the agreement check. Staff hand it out only after
+# students have labelled, and this repo is public, so it stays off GitHub.
+data/staff_labels.csv

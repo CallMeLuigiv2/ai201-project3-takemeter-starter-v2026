@@ -383,29 +383,74 @@ it up" and "doesn't". It didn't buy my hardest boundary.
 <!-- Five criteria across three seeds. The notebook's section 6 prints the
      spread table; the Target and Verdict columns are yours. -->
 
+Same notebook and settings as unit 5, run three times with seeds 42, 7 and
+2024 (`results_three_seeds_before.json`). Each seed gives a different
+198 / 43 / 43 split with the same per-label counts, so every test split has
+9 `evidence`, 18 `opinion` and 16 `reaction`.
+
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Label balance | `evidence` ≥ 18% of the file and ≥ 8 in test; no label > 45% | 20.1%, 9, 41.9% | 20.1%, 9, 41.9% | 20.1%, 9, 41.9% | MET |
+| 2. `evidence` F1 | ≥ 0.50 | 0.750 | 0.500 | 0.667 | MET |
+| 3. Macro F1 | ≥ 0.60 | 0.519 | 0.412 | 0.523 | MISSED |
+| 4. `opinion` and `reaction` F1 | each ≥ 0.60 | 0.625 / 0.182 | 0.642 / 0.095 | 0.680 / 0.222 | MISSED |
+| 5. Confidence gap (most-sure third minus least-sure third) | ≥ 0.20 | 0.214 | 0.071 | 0.214 | MISSED |
+
+The spread table from the notebook's section 6:
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.535 | 0.488 | 0.581 | 0.093 |
+| Macro F1 | 0.519 | 0.412 | 0.523 | 0.111 |
+| F1 — `evidence` | 0.750 | 0.500 | 0.667 | 0.250 |
+| F1 — `opinion` | 0.625 | 0.642 | 0.680 | 0.055 |
+| F1 — `reaction` | 0.182 | 0.095 | 0.222 | 0.127 |
+
+Accuracy moves 9 points between seeds and macro F1 11. Criterion 2 is MET by
+the smallest margin possible: seed 7 lands exactly on 0.50, and one more
+missed `evidence` post would have made it a miss. `opinion` is the steadiest
+number in the table. `reaction` fails on every seed.
+
+**Hardware.** These three runs are on my desktop's CPU (AMD Ryzen 9 5900X,
+torch 2.14.1+cpu), about 65 seconds per seed. Unit 5's run was on my laptop's
+CPU (Intel i3-1115G4), 7 min 44 s. Seed 42 came out identical on both machines
+in every score and in the confusion matrix. The only difference is in the 8th
+decimal place of one average confidence (0.47051844 against 0.47051841),
+which is the different-hardware arithmetic `RUNNING.md` warns about.
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+Seed 42, as the notebook's section 7 prints it:
+
+| true \ predicted | evidence | opinion | reaction |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **evidence** | 6 | 2 | 1 |
+| **opinion** | 0 | 15 | 3 |
+| **reaction** | 1 | 13 | 2 |
+
+All three seeds added together (129 test posts):
+
+| true \ predicted | evidence | opinion | reaction |
+|---|---|---|---|
+| **evidence** | 15 | 8 | 4 |
+| **opinion** | 1 | 49 | 4 |
+| **reaction** | 3 | 40 | 5 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
+
+13 real `reaction` posts were called `opinion`, and only 3 `opinion` posts
+went the other way. Across all three seeds it's 40 of 48 `reaction` posts
+called `opinion`, against 4 the other way. The model hasn't learned my
+`opinion`/`reaction` line at all. When a post doesn't back anything up, it
+answers `opinion`, which it did for 97 of the 129 test posts. The
+`evidence` line it did learn: only 4 of the 102 non-`evidence` posts were
+called `evidence`.
 
 
 

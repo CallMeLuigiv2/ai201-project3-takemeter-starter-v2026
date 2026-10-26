@@ -647,24 +647,113 @@ the 30 as borderline, and I matched them on 6 of those 7.
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** I trained longer and kept the best epoch. `EPOCHS` went
+from 3 to 10, and the trainer now saves every epoch and reloads the one with
+the lowest validation loss at the end (early stopping by validation). Nothing
+else changed: same `labels.csv`, same seeds and splits, same learning rate,
+batch size and max length. The edits are the `EPOCHS` line in section 2 and
+the `TrainingArguments` in section 4 of the notebook.
 
-**Which diagnosis pointed at it:**
+I chose this, then asked whether training longer would overfit. With 198
+training posts it can, which is why the epoch is picked by the validation
+split and not fixed at 10. I picked by validation loss, not validation F1,
+because F1 on 43 posts jumps by several points per post and loss moves
+smoothly. The test posts played no part in choosing the epoch.
+
+**Which diagnosis pointed at it:** "A task the model can't reach from this
+much training". After 3 epochs the training loss was 0.98–1.00 against 1.10
+for guessing evenly, the validation loss was still falling on every seed, and
+the model was barely more confident when right than when wrong. The agreement
+report pointed away from my labelling, so the first fix belonged on the model
+side.
+
+**What the validation curves did.** The best epoch came well before 10 on
+every seed, and validation loss rose after it:
+
+| Seed | Best epoch | Validation loss there | Validation loss at epoch 10 |
+|---|---|---|---|
+| 42 | 7 | 0.745 | 0.762 |
+| 7 | 7 | 0.712 | 0.734 |
+| 2024 | 6 | 0.790 | 0.818 |
+
+So a plain 10-epoch run would have been scored on a model that had started
+to overfit. Early stopping kept the epoch before that. I also checked that the
+scored model was the best epoch: reloading seed 2024's saved epoch-6 model
+and scoring its test split gives the same 0.651 accuracy and 0.644 macro F1
+as the run.
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Label balance | `evidence` ≥ 18% of the file and ≥ 8 in test; no label > 45% | 20.1%, 9, 41.9% | 20.1%, 9, 41.9% | 20.1%, 9, 41.9% | MET |
+| 2. `evidence` F1 | ≥ 0.50 | 0.778 | 0.818 | 0.737 | MET |
+| 3. Macro F1 | ≥ 0.60 | 0.568 | 0.625 | 0.644 | MISSED |
+| 4. `opinion` and `reaction` F1 | each ≥ 0.60 | 0.526 / 0.400 | 0.556 / 0.500 | 0.714 / 0.480 | MISSED |
+| 5. Confidence gap (most-sure third minus least-sure third) | ≥ 0.20 | 0.500 | 0.214 | 0.071 | MISSED |
+
+The spread table from section 6 (`results_three_seeds_after.json`), with the
+before numbers in brackets:
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.535 (0.535) | 0.605 (0.488) | 0.651 (0.581) | 0.116 (0.093) |
+| Macro F1 | 0.568 (0.519) | 0.625 (0.412) | 0.644 (0.523) | 0.076 (0.111) |
+| F1 — `evidence` | 0.778 (0.750) | 0.818 (0.500) | 0.737 (0.667) | 0.081 (0.250) |
+| F1 — `opinion` | 0.526 (0.625) | 0.556 (0.642) | 0.714 (0.680) | 0.188 (0.055) |
+| F1 — `reaction` | 0.400 (0.182) | 0.500 (0.095) | 0.480 (0.222) | 0.100 (0.127) |
+
+Confusion matrix after, seed 42:
+
+| true \ predicted | evidence | opinion | reaction |
+|---|---|---|---|
+| **evidence** | 7 | 2 | 0 |
+| **opinion** | 0 | 10 | 8 |
+| **reaction** | 2 | 8 | 6 |
+
+All three seeds added together:
+
+| true \ predicted | evidence | opinion | reaction |
+|---|---|---|---|
+| **evidence** | 23 | 3 | 1 |
+| **opinion** | 4 | 35 | 15 |
+| **reaction** | 5 | 24 | 19 |
 
 **Did it help, and how do I know:**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
+
+Yes, on the thing it was aimed at, but it didn't turn a single missed
+criterion into MET. I know because it's the same three seeds and the same
+splits as before, with only the training changed.
+
+- **Macro F1 rose on every seed**, from an average of 0.485 to 0.612. Seeds 7
+  and 2024 now clear 0.60. Seed 42 doesn't (0.568), so criterion 3 is still
+  missed.
+- **`reaction` F1 more than doubled on every seed**, from 0.10–0.22 to
+  0.40–0.50. It's still under 0.60, so criterion 4 is still missed.
+- **The confusion stopped being one-sided.** Across the seeds, `reaction`
+  called `opinion` fell from 40 to 24, and `opinion` called `reaction` rose
+  from 4 to 15. The model answered `opinion` for 62 of the 129 test posts
+  instead of 97. On seed 42 it's now 8 each way, which the notebook reads as
+  a pair that's hard in both directions.
+- **What it cost: `opinion` F1 fell on two seeds** (0.625 to 0.526, and 0.642
+  to 0.556). Before, `opinion` scored well because the model answered
+  `opinion` for most posts: recall 0.83–0.94 at precision 0.49–0.53. Once it
+  started using `reaction`, `opinion` recall dropped to 0.56 on those two
+  seeds. So the old `opinion` number was partly the same lopsidedness as the
+  `reaction` failure.
+- **`evidence` got stronger and steadier.** Its lowest seed went from 0.500,
+  exactly on the line, to 0.737. Criterion 2 now passes with room to spare.
+- **Confidence moved around rather than improving.** The gap went from
+  0.214 / 0.071 / 0.214 to 0.500 / 0.214 / 0.071, so criterion 5 now misses on
+  a different seed. The model is more confident overall (0.60–0.67 when it's
+  right), but on seeds 7 and 2024 it's still barely more confident when right
+  than when wrong (0.652 against 0.631, and 0.601 against 0.591).
+- **The measure got less stable on accuracy** (spread 0.093 to 0.116, over the
+  notebook's 10-point warning) **and more stable on macro F1** (0.111 to
+  0.076). One test post is worth 2.3 points of accuracy here.
 
 
 

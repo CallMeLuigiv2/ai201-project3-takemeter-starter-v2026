@@ -1,0 +1,249 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 43,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": false,
+  "scores": {
+    "n": 43,
+    "accuracy": 0.3953488372093023,
+    "f1_macro": 0.40197070173466704,
+    "per_label": {
+      "evidence": {
+        "precision": 0.6,
+        "recall": 0.3333333333333333,
+        "f1": 0.42857142857142855,
+        "support": 9
+      },
+      "opinion": {
+        "precision": 0.46153846153846156,
+        "recall": 0.3333333333333333,
+        "f1": 0.3870967741935484,
+        "support": 18
+      },
+      "reaction": {
+        "precision": 0.32,
+        "recall": 0.5,
+        "f1": 0.39024390243902435,
+        "support": 16
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "I've reached the saturation point.\r\n\r\nI don't have time to really get to know one model before the next is out, and I'm just talking about OpenAI and Anthropic, never mind the long tail of alternatives.\r\n\r\nSo I just more or less haphazardly pick one based on the mood I'm in, and set reasoning effort based on how much quota I have left.",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Yes, they can already do this by writing code, and you can train them to know how/when to do this. Fundamentally though, it\u2019s still a \u201cwhat color is the air\u201d type of question after tokenization.",
+      "gold": "reaction",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I think that active voice the person responding to you used was more politically factual, objective and did not took stand. Going out of your way to hide the actor is not politically neutral action nor it represents lack of commentary.",
+      "gold": "reaction",
+      "predicted": "opinion"
+    },
+    {
+      "text": "From what pros are saying after matches, especially in classical chess, it's almost always preparation and metagaming the opponent vs finding good moves.\r\n\r\nIt's a lot of mind games involved, going for specific openings, repeating same moves as last match, doing a poor by surprising, move etc.\r\n\r\nMany GMs said that to win a match you have to play non-ideal moves many times, otherwise it will likely end in a draw.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Or \u201chere I have the hash. Yes I\u2019m sure - see, I checked. Here is the calculation, 1+1=5. Yes, it\u2019s definitely correct. I don\u2019t know why they\u2019re not accepting it. Perhaps the server is down. It\u2019s definitely correct\u201d.",
+      "gold": "opinion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "I'm late with Pac-Man as well..\r\n\r\nGPT 6.1 Sol \u2014 91, ~9 min, $0.51\r\nhttps://jonclegg.github.io/pacman-bakeoff/#gpt-6.1-sol\r\n\r\nOpus 5.5 \u2014 99, ~9 min, $2.00\r\nhttps://jonclegg.github.io/pacman-bakeoff/#claude-opus-5-5\r\n\r\nGPT 6 Astra \u2014 87, ~10 min, $2.42\r\nhttps://jonclegg.github.io/pacman-bakeoff/#gpt-6-astra\r\n\r\nOpus still plays the best. Sol is almost as good and way cheaper. Astra costs the most, scores the least of the three, and the UI is full of slop copy and design.\r\n\r\nFull gallery: https://jonclegg.github.io/pacman-bakeoff/",
+      "gold": "evidence",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Most mathematical results are shared on Arxiv. Journals add peer review.",
+      "gold": "reaction",
+      "predicted": "evidence"
+    },
+    {
+      "text": "HuggingFace offers abliterated/uncensored models, which would seem to run contrary to the \"AI is too powerful for regular people\" narrative that the big players are pushing.\r\n\r\nMy primary concern is that Nvidia will bow to the pressure and restrict abliterated/uncensored models on HF.",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "At some point during this progression, the poster lost most of the \u201cAI-ness\u201d and I didn\u2019t get such a visceral reaction to it. Cool!",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Maths will continue as a field of natural science in understanding the results and uncovering meanings in them. It is normal that the established community is afraid of the change, because it\u2019s their _home_ that\u2019s changing. But it will be a better home to the new generation nonetheless, one that\u2019s not as daunting as the higher maths has always been to many. The concerns raised here will not be a problem at all.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Like HDR photos of the mid-2000s, these too shall pass.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Between all the posts fabricating scenarios to justify the AA score and the others trying to undermine AA, I'm getting strong astroturf vibes.\r\n\r\nEither that, or the average poster on HN isn't nearly as critical as I had thought.",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Nvidia overpaid for Hugging Face.",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "> This is exactly the part I\u2019m afraid of. The political response of the displaced labor (which may or may not be violent / revolutionary), and the subsequent counter-response of capital\u2026 potentially using the very robots that displaced the jobs to begin with.\r\n\r\nI get the fear, but at that point we're basically imagining that Terminator is a documentary. Given that the US has more civilian guns than people, and that private ownership of military grade weaponry is strictly controlled, I don't think street wars between private robot armies and folks in the bread line is a realistic outcome.",
+      "gold": "evidence",
+      "predicted": "reaction"
+    },
+    {
+      "text": "> but it is undoubtedly and objectively accelerating research.\r\n\r\nPart of the point of the letter is that it is quite possible to act in a way that is a net negative to research. The most obvious case is when the companies violate ethical standards in research.\r\n\r\nThe subtler case, the one for maths in particular, is what happens when you fail to follow well-established patterns for making maths research productive. Tao himself spelled out how that can look in https://mathstodon.xyz/@tao/117207856734787448 (which notably came before any of the news on Navier\u2013Stokes).",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "> to keep having to prove LLMs don't hallucinate\r\n\r\nthis makes it sound like it's ever been proven, when in fact it never has and never will",
+      "gold": "reaction",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Same experience. I often see people say how little they spend on DeepSeek v4.1 flash, but when I put 60 bucks into my account, it was gone in a few days of non-exclusive use. I'm actually curious what the difference is. I used it through pi and opencode, but the harness seemed to have no obvious impact on usage.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "> \u2026 Isn't it possible that it understands the innuendo and is going along with making the joke?\r\n\r\nThis is from 2018 so presumably it has made it into some LLM training data set by now.\r\n\r\n\"A Massive Object Devastated Uranus A Long Time Ago And It Never Fully Recovered\"\r\n\r\nhttps://www.bgr.com/science/uranus-collision-early-solar-system/",
+      "gold": "evidence",
+      "predicted": "reaction"
+    },
+    {
+      "text": "I wonder if OpenRouter being acquired was a catalyst for this deal.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Better to site the primary source, its like googling something and then siting google as your source.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "when is it available on plus?",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Bigger => Bigger, makes sense to me.",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "The original book that article is based on is great.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "To add onto this, I feel like this has been happening a lot, where critics project backwards imagined claims or go nutpicking for random comments online to make something sound absurd and like everything is behind schedule and nothing is materializing, and then you can see other people (not necessarily the same people, the point isn't \"look at these hypocrites\") saying that it's all moving too fast. Both of these can't both be true in their strongest forms. I think what they have in common is that because they're relative measures to an unstated baseline, they're free criticisms you can throw at any development whatsoever, regardless of what is or is not turning up.",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "\"pace the frontier\" is the new \"flatten the curve\"",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Your point is largely addressed in the article, did you try reading it? \"In many fields and activities, years of training have traditionally served not only to produce a final answer or product, but also to develop understanding and the ability to formulate new questions and ideas. However, building on a vast body of previous human work, AI systems are becoming increasingly capable of producing the results of such work directly, and these goals cease to align.\"\r\n\r\nThe point is that these proofs are largely useless without the insights. The value of a proof is largely in the travel, not so much in the destination.",
+      "gold": "evidence",
+      "predicted": "reaction"
+    },
+    {
+      "text": "None of the labs are blameless. For instance, after the recent announcement of a 2-week frontier RL pause from OpenAI, Anthropic declined to communicate a substantial parallel pause [1], although they discussed also briefly pausing some \"high-risk\" runs.\r\n\r\nAnthropic has been the most vocal about AI risks, but it feels like all the big 3 have bought into the \"others will do it if we don't do it first\" narrative at this point. It increasingly gives \"just following orders\" vibes.\r\n\r\n[1]: https://news.ycombinator.com/item?id=49529511",
+      "gold": "evidence",
+      "predicted": "reaction"
+    },
+    {
+      "text": "> No more editing the system prompt as the conversation progresses, no more dynamic loading of custom tool calling formats.\r\n\r\nHm, aiui you can support both of these via mid-conversation system turns https://platform.claude.com/docs/en/build-with-claude/mid-conversation-system-messages - and in general you'd want to to preserve the cache and recency of the instruction anyways rather than frankensteining an off-distribution transcript. Not sure though.",
+      "gold": "evidence",
+      "predicted": "reaction"
+    },
+    {
+      "text": "I think this is ridiculously flippant. If software engineering and the hardest math is solved, that means that eventually a majority of professions and knowledge work is solved. This is hugely problematic because of the way our society currently functions. People need jobs to eat, pay for housing, etc.\r\n\r\nDismissing it as \"innovations have happened before\" is disingenuous. Yes, innovations have happened, but none of those threatened to automate all human work in existence.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "If someone gets the answer sooner than you, that doesn't inhibit you developing your understanding of the answer privately the same way you would have done if they hadn't got the answer. I don't see how anybody loses by the answer being discovered sooner.",
+      "gold": "reaction",
+      "predicted": "opinion"
+    },
+    {
+      "text": "that is a worry yes. instrumental convergence and misalignment during RL is when it is most risky because it hasn't necessarily had the final safety polishes applied\r\n\r\ni get a lot of skepticism on HN by the same crowd that has been wrong about this tech for about 4+ years straight",
+      "gold": "reaction",
+      "predicted": "opinion"
+    },
+    {
+      "text": "> so, how do you think we can do this?\r\n\r\nFor a lack of deep knowledge in this area, I don't think I have answers for this, but if one is interested in working on this problem, my approach would be to start with diving deeply into scientific literature about psychology and sociology to find out\r\n\r\n- what convinces people to change their opinions,\r\n\r\n- what causes people to take action\r\n\r\netc.",
+      "gold": "reaction",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I think \"a lot\" is very subjective. I can also say \"a lot of people really like AI-generated arts\" and that would be true as well. HN is a place where a lot of normally objective, informed, and probably very nice folks in the real life come to engage in endless of debates that go nowhere.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "These companies are posting massive losses while also lowering prices. This sounds just like the Chinese bikeshare bubble where they were all taking massive losses in hopes that their competitor would go broke first.\r\n\r\nIn the end, everyone lost and there are millions of bikes in landfills.\r\n\r\nIf you're interested in the bikeshare bubble, Asianometry did a video on it a while ago.\r\n\r\nhttps://www.youtube.com/watch?v=FQrEDq8KPiU",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "(It was a retrospective question.)",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "The thing about $1.65T being \"hidden from the balance sheets\" is overblown. How do we know about that money if it's hidden? Because it isn't - it's in other public SEC documents, which the $1.65T claim also slightly misinterprets.\r\n\r\nhttps://finterm.ai/blog/big-tech-hidden-debt-fact-check.html is one good explainer on that.",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "They train their models to be persistent and collaborative, and will gladly show you their success stories: fixing software vulnerabilities, solving math problems, one-shotting complex projects, and so on.\r\n\r\n\u201cOur product does crimes and we only learn about it when people complain\u201d hardly seems one of those happy stories.",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "> they were going to do open source it anyway.\r\n\r\nuh huh.\r\n\r\n> Was NVCC or CUDA ever open source since the lifetime of its development?\r\n\r\nyou ever ask Nvidia why? i did.",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": "And that's the rub, isn't it?\r\n\r\nIf it can replace a worker but does too much work to be checked routinely by a human, and bears no real responsibility for its actions, well... it's really just a way to jack up the value of the settlement the company using it gets to pay out when it does something that causes a lawsuit.\r\n\r\nIf OpenAI had just simply stuck to making \"good enough\" models that were open sourced (like they promised they would be when starting out) and could be used to augment a human doing a task - a human that could be given actual consequences for messing up - they wouldn't have burned all of this money trying to reach this nebulous definition of AGI. Hell, \"good enough\" is what many open-source models are, and that's what terrifies Altman.",
+      "gold": "opinion",
+      "predicted": "reaction"
+    },
+    {
+      "text": ">  Stylistically everything you see is an artifact of post-training,\r\n\r\nIt is still not exactly clear if it is true or not. Unless we have base \"pt\" snaphot of Claude we can't say one way or another. I've played a bit with base models of Nemo, Gemma etc and they all had tics, not much different from RLHFed instruct versions.",
+      "gold": "reaction",
+      "predicted": "opinion"
+    },
+    {
+      "text": "China as \u201csecond place in any sense\u201d ignores reality.\r\n\r\nTikTok: achieved global cultural and algorithmic dominance.\r\n\r\nDJI: controls roughly 70% of the global consumer and commercial drone market.\r\n\r\nCATL: The world\u2019s largest EV battery manufacturer.\r\n\r\nBYD: Surpassed Tesla in total electric vehicle production volume.\r\n\r\nShein & Temu\r\n\r\nThe list goes on\u2026",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "I am sorry, I meant to say I generated STAR out of my resume line, trying to generate STAR, and polish it thus $5.\r\n\r\n---\r\n\r\nI provided crapton of context for that one resume line.  \r\nAll the work I did, documentations for my justifications, etc.\r\n\r\nI initially messed up and came out ot $5, rest of resume used around $4 per line (I used a fresh new session on purpose).\r\n\r\n---\r\n\r\nAs a clarification, $2.2 average for OPUS 5.5 was the same process in a new session, same context, same prompts.\r\n\r\nAlso adding verification for that Fable 5.1 output in the same sesssion.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Asking AI to review my code is actually pretty useful... but makes the process slower.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    }
+  ]
+}

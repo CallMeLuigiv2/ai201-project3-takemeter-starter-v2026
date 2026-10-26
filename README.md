@@ -313,20 +313,66 @@ about 11 points.
 <!-- Both models on the same posts. `python baseline.py --trained results.json`
      prints this table for you. -->
 
+Both models are scored on the same 43 held-out posts (`test_split.csv`,
+seed 42). The baseline is `facebook/bart-large-mnli`, zero-shot, given my
+definitions from `label_definitions.txt`. The trained column is
+`results.json` from unit 5.
+
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.326 | 0.535 | +0.209 |
+| Macro F1 | 0.251 | 0.519 | +0.268 |
+| F1 — `evidence` | 0.286 | 0.750 | +0.464 |
+| F1 — `opinion` | 0.000 | 0.625 | +0.625 |
+| F1 — `reaction` | 0.468 | 0.182 | -0.286 |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
 
+The trained model beats the baseline on all three labels, because it learned
+from 198 of my own labelled posts and the baseline learned from none.
+
+(I chose this from four predictions Claude drafted out of what I already knew:
+the baseline numbers, my training-set size, and how hard the
+`opinion`/`reaction` line was to label. I hadn't seen the trained numbers.)
+
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
+
+Fine-tuning added a lot overall: +0.21 accuracy and +0.27 macro F1. Nearly
+all of it comes from two labels, `opinion` (0.00 to 0.63) and `evidence`
+(0.29 to 0.75).
+
+My prediction was wrong on `reaction`. The trained model scores 0.18 there,
+worse than a model that never saw my data. It called 13 of the 16 real
+`reaction` posts `opinion`, and it only answered `reaction` 6 times in 43.
+
+The baseline's 0.47 on `reaction` isn't skill either. It answered `reaction`
+for 31 of the 43 posts and never answered `opinion`, so it catches
+`reaction` posts by guessing that label almost every time. Its `reaction`
+precision is 0.35.
+
+So neither model separates `opinion` from `reaction`. Each one pushes the
+pair onto one side: the baseline onto `reaction`, the trained model onto
+`opinion`. What fine-tuning bought is `evidence`, and the line between "backs
+it up" and "doesn't". It didn't buy my hardest boundary.
+
+**Two side results:**
+
+- **Bare label names beat my definitions.** Run with only the words
+  `evidence`, `opinion` and `reaction`, the baseline scores 0.402 macro F1
+  instead of 0.251 (`baseline_results_bare_names.json`). `baseline.py` puts
+  each definition into the sentence "This post is {}.", and mine start with a
+  verb, so they read "This post is tells you how the writer feels…". My
+  `reaction` definition ("states, explains, describes, predicts or asks
+  something") also fits almost any post. The table above uses the
+  definitions run, which is the course default. The trained model still
+  beats the stronger bare-names baseline (0.519 against 0.402).
+- **Speed.** The baseline took 59 seconds for the 43 posts, model loading
+  included, on my desktop's CPU (Ryzen 9 5900X). The trained model scores the
+  same 43 in about a second.
 
 
 

@@ -463,11 +463,11 @@ called `evidence`.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Label balance | `evidence` ≥ 18% of the file and ≥ 8 in test; no label > 45% | MET | `evidence` is 20.1% with 9 test posts on every seed; the largest label is 41.9%. |
+| 2 | `evidence` F1 | ≥ 0.50 on all three seeds | MET | 0.750, 0.500, 0.667. Seed 7 lands exactly on the line, so this passes with no margin. One more missed `evidence` post would make it a miss. |
+| 3 | Macro F1 | ≥ 0.60 on all three seeds | MISSED | 0.519, 0.412, 0.523. Below on every seed. |
+| 4 | `opinion` and `reaction` F1 | each ≥ 0.60 on all three seeds | MISSED | `opinion` passes on every seed (0.625, 0.642, 0.680). `reaction` fails on every seed (0.182, 0.095, 0.222). |
+| 5 | Confidence gap | ≥ 0.20 on all three seeds | MISSED | 0.214, 0.071, 0.214. Seed 7 misses. |
 
 **Diagnoses**
 
@@ -479,6 +479,45 @@ called `evidence`.
      ⚠️ Use your agreement report as evidence. It is the only instrument you
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
+
+**Criteria 3 and 4 miss for one reason: `reaction`.** The model never
+learned my `opinion`/`reaction` line. Across the three seeds it called 40 of
+the 48 `reaction` test posts `opinion`. Going through the four causes:
+
+- **Too few examples?** No. `reaction` has 76 training posts and `opinion`
+  has 83. `evidence` has only 39 and scores far better.
+- **A boundary I applied inconsistently?** The agreement report says not by
+  me. Staff's `reaction`/`hot_take` line is the same kind of line as my
+  `opinion`/`reaction` one: a feeling against a statement. Of the 20 staff
+  posts on either side of it, I crossed it once, and that was a misread
+  (disagreement #4). If I applied a feeling-against-statement rule loosely,
+  it should show up on 30 posts, and it doesn't. The limit is that 249 of my
+  284 labels are Claude's, applied under my rule, and this check doesn't
+  measure those. The only direct test of Claude against me came before I
+  rewrote the rule (40% on 20 cold posts). After the rewrite I reviewed 15
+  of its labels and kept 12. So noise in the pre-labels isn't ruled out.
+- **A genuinely hard pair?** Partly. It's the hardest line in my taxonomy:
+  10 of the 12 cold-test disagreements were on it. But a hard pair gets
+  confused in both directions, and here it's 40 one way against 4 the other.
+  That's a model that has picked a side, not one that's torn.
+- **A task the model can't reach from this much training?** This fits
+  best. The training loss averaged 0.98–1.00 over the 3 epochs, against
+  1.10 for guessing evenly. Validation loss was still falling at epoch 3 on
+  all three seeds (seed 42: 1.02, 0.94, 0.92). The model stopped after 39
+  steps, having learned "a link or a number means `evidence`" and little
+  else. When it's unsure it falls back on `opinion`, the biggest label (42%
+  of the file).
+
+**Criterion 5 misses for the same reason.** The model is barely more
+confident when it's right than when it's wrong: an average of 0.471 against
+0.456 on seed 42, 0.427 against 0.417 on seed 7, and 0.436 against 0.427 on
+seed 2024. With confidence that flat, splitting the test posts into a sure
+third and an unsure third is close to noise. Two seeds cleared 0.20 by
+3 posts out of 14. Seed 7 managed 1.
+
+**What this points at.** The agreement report doesn't point at my
+labelling, and the training logs point at a model that stopped too early.
+So the fix to try first is on the model side, which is Milestone 5.
 
 
 
